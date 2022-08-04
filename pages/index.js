@@ -1,5 +1,5 @@
 import Head from 'next/head';
-// import Title from "../components/Home/Title";
+import Title from "../components/Home/Title";
 
 
 export default function Home() {
@@ -12,7 +12,7 @@ export default function Home() {
             </Head>
 
             <main>
-                {/* <Title /> */}
+                <Title />
             </main>
         </div>
     );
