@@ -7,7 +7,7 @@
     align-items: center;
     flex-wrap: wrap;
     overflow: hidden;
-    background-color: #333;
+    background-color: #02040a;
     animation: animateColor 5s linear infinite;
 }
 @keyframes animateColor {
@@ -45,4 +45,29 @@
 .theDot:hover::before {
     transform: scale(1);
     transition: 0s;
+}
+
+.titleText {
+    color: white;
+    position: absolute;
+    left: 15%;
+    font-size: 24px;
+}
+.noOverlay {
+    pointer-events: none;
+
+}
+
+.myName {
+    font-size: 72px;
+    background: rgb(174,112,236);
+    background: linear-gradient(350deg, rgba(174,112,236,1) 0%, rgba(1,222,190,1) 100%);    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media only screen and (max-width: 600px) {
+    .titleText {
+        left: 5%;
+    }  
 }

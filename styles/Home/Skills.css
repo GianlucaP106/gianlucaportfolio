@@ -1,0 +1,85 @@
+
+.sliderLContainer {
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+}
+
+.sliderSContainer {
+    width: 200%; height: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    overflow: hidden;
+    position: absolute;
+    animation: logoSlider 10s linear infinite;
+    background-color: #02040a;
+}
+.sliderSContainer:hover {
+    animation-play-state: paused;
+}
+.lsImgContainer {
+    height: 100px;
+    width: 100px;
+    background-color: #02040a;
+}
+.myTextGradient {
+    /* background: rgb(174,112,236);
+    background: linear-gradient(350deg, rgba(174,112,236,1) 0%, rgba(1,222,190,1) 100%);    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    animation: myGradientAnimation 3.5s linear infinite;
+
+}
+
+
+@keyframes logoSlider {
+    0%{
+        left: 0;
+    }
+    100% {
+        left: -100.75%;
+    }
+}
+@keyframes logoSlider2 {
+    0%{
+        left: 0;
+    }
+    100% {
+        left: -202%;
+    }
+}
+
+@keyframes myGradientAnimation {
+    0% {
+        color: #3acec3;
+    }
+    20% {
+        color: #60b5cc;
+    }
+    40% {
+        color: #7c9ad6;
+    }
+    60% {
+        color: #8394d8;
+    }
+    80% {
+        color: #9e7be4;
+    }
+    100% {
+        color: #3acec3;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .mobileSkillCol {
+        padding-top: 60px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .sliderSContainer {
+        width: 400%;
+        animation-name: logoSlider2;
+        /* gap: 20px; */
+    }
+}

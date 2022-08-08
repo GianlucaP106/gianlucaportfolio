@@ -1,0 +1,23 @@
+.skillContainerBorder {
+    border-radius: 20px;
+    width: 90%;
+    height: 325px;
+}
+
+.skillContainerIn {
+    background-color: #0D1116;
+    width: 98%;
+    height: 95%;
+    border-radius: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+    .skillItemText {
+        font-size: 18px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .skillItemText {
+        font-size: 24px;
+    }
+}
