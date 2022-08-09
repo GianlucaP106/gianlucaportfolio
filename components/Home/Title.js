@@ -111,21 +111,19 @@ export default function Title() {
 
     }
     function startTyping() {
-        setTimeout( () => {
-            typeTag1();
-        }, 1000);
+        typeTag1();
         setTimeout( () => {
             typeHi();
-        }, 1700);
+        }, 700);
         setTimeout( () => {
             typeMyName();
-        }, 3000);
+        }, 2000);
         setTimeout( () => {
             typeDes();
-        }, 5000);
+        }, 4000);
         setTimeout( () => {
             typeTag2();
-        }, 9000);
+        }, 8000);
     }
 
     const spans = 1100;
@@ -136,7 +134,9 @@ export default function Title() {
     let count = 0;
 
     useEffect(() => {
-        startTyping();
+        setTimeout( () => {
+            startTyping();
+        }, 1000);
     },[])
     const tag = "<>";
     return(
