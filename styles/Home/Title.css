@@ -50,12 +50,26 @@
 .titleText {
     color: white;
     position: absolute;
+    top: 24%;
     left: 15%;
-    font-size: 24px;
 }
 .noOverlay {
     pointer-events: none;
 
+}
+.emptyTag1 {
+    position: absolute;
+    left: 10%;
+    top: 15%;
+    font-size: 40px;
+    color: gray;
+}
+.emptyTag2 {
+    position: absolute;
+    left: 10%;
+    top: 65%;
+    font-size: 40px;
+    color: gray;
 }
 
 .myName {
@@ -65,9 +79,59 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+#homeText1 {
+    font-size: 75px;
+}
+#homeText2 {
+    font-size: 75px;
+}
+#homeText3 {
+    font-size: 24px;
+}
+
+.typingEf {
+    /* position: relative; */
+}
+.op0 { opacity: 0; }
+
+.typingEf::after {
+    content: "";
+    position: relative;
+    border-right: 2px solid white;
+    height: 90%;
+    right: -5px;
+    animation: typeBlink 1s infinite steps(2);
+}
+
+@keyframes typeBlink {
+    0% {
+        opacity: 0;
+    }
+    /* 50% {
+        opacity: 0.5;
+    } */
+    /* 100% {
+        opacity: 0;
+    } */
+}
 
 @media only screen and (max-width: 600px) {
     .titleText {
-        left: 5%;
-    }  
+        left: 20%;
+    } 
+    
+}
+@media only screen and (max-width: 1024px) {
+    #homeText1 {
+        font-size: 38px;
+    }
+    #homeText2 {
+        font-size: 38px;
+    }
+    #homeText3 {
+        font-size: 24px;
+    }
+    .titleText {
+        top: 28%;
+    }
 }

@@ -11,6 +11,9 @@
     border-radius: 20px;
 }
 
+.skillContainerBorder:hover {
+    animation: animateColor 2s linear infinite;
+}
 @media only screen and (max-width: 767px) {
     .skillItemText {
         font-size: 18px;
