@@ -40,8 +40,8 @@ export default function getLogos() {
         logo7: {
             src: "/assets/logos/githublogo.png",
             alt: "Git Logo",
-            w: 100,
-            h: 100
+            w: 128,
+            h: 75
         },
         logo8: {
             src: "/assets/logos/JavaScript-logo.png",
