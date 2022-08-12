@@ -1,10 +1,28 @@
+import { useState } from "react";
+
 import LogoSlider from "../comps/LogoSlider";
 import Skill from "../comps/Skill";
 
 import getSkills from "../../storage/skills";
+import SkillPopup from "../comps/SkillPopup";
 
 export default function Skills() {
 
+    const [skillPopup, setSkillPopup] = useState(false);
+    const [skillPopupProps, setSkillPopupProps] = useState(null);
+
+    function handleLogoClick(e, item) {
+        const props = {
+            item: item,
+            x: e.clientX + window.scrollX,
+            y: e.clientY + window.scrollY,
+
+        }
+        console.log(props.x);
+        setSkillPopupProps(props);
+        setSkillPopup(true);
+
+    }
     return (
         <section >
             <div className="row" style={{paddingTop: "20px"}}>
@@ -30,7 +48,18 @@ export default function Skills() {
             </div>
             <div className="row" style={{paddingTop: "100px", paddingBottom: "60px"}}>
                 <div className="col">
-                    <LogoSlider />
+                    <LogoSlider call={handleLogoClick} />
+                    {skillPopup && 
+                    <SkillPopup prop={skillPopupProps} />
+                    }
+                </div>
+            </div>
+            <div className="row" style={{paddingTop: "60px"}}>
+                <div className="col">
+                    {/* <SkillPopup /> */}
+                </div>
+                <div className="col">
+            
                 </div>
             </div>
         </section>

@@ -1,0 +1,16 @@
+
+
+.skillPopup {
+    width: 200px; height: 200px;
+    background-color: #ffff;
+    border: red 1px solid;
+    display: block;
+    z-index: 10;
+    
+}
+
+.buttonDiv {
+    width: 100px; height: 100px;
+    background-color: green;
+    cursor: pointer;
+}

@@ -7,6 +7,7 @@ import "../styles/Layout/Navibar.css";
 
 
 import "../styles/comps/Skill.css";
+import "../styles/comps/SkillPopup.css";
 
 import "../styles/Home/Title.css";
 import "../styles/Home/Skills.css";
