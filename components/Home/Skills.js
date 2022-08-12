@@ -14,17 +14,17 @@ export default function Skills() {
     function handleLogoClick(e, item) {
         const props = {
             item: item,
-            x: e.clientX + window.scrollX,
-            y: e.clientY + window.scrollY,
+            x: e.clientX + window.scrollX - 100,
+            y: e.clientY + window.scrollY - 100,
 
         }
-        console.log(props.x);
+        document.getElementById('sliderSmallCont').classList.add("sliderPaused");
         setSkillPopupProps(props);
         setSkillPopup(true);
 
     }
     return (
-        <section >
+        <section id="skillSection">
             <div className="row" style={{paddingTop: "20px"}}>
                 <div className="col centerText">
                     <h3 className="myfont600 fontSize48 text-white">What are my <span className="myTextGradient">skills?</span></h3>
@@ -50,7 +50,7 @@ export default function Skills() {
                 <div className="col">
                     <LogoSlider call={handleLogoClick} />
                     {skillPopup && 
-                    <SkillPopup prop={skillPopupProps} />
+                    <SkillPopup prop={skillPopupProps} setSkillPopup={setSkillPopup} />
                     }
                 </div>
             </div>

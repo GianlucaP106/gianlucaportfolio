@@ -3,115 +3,115 @@ export default function getLogos() {
     const logos = {
         logo1: {
             src: "/assets/logos/nextLogo.png",
-            alt: "Next Logo",
+            alt: "Next",
             w: 100,
             h: 100,
-            description: "NextJs, the full stack framework for web applications"
+            description: "NextJs, my favourite full stack framework for web applications"
         },
         logo2: {
             src: "/assets/logos/nodejsLogo.png",
-            alt: "NodeJs logo",
+            alt: "NodeJs",
             w: 90,
             h: 100,
-            description: "NextJs, the full stack framework for web applications"
+            description: "I use Nodejs for every javascript based web application"
         },
         logo3: {
             src: "/assets/logos/javaLogo.png",
-            alt: "Java Logo",
+            alt: "Java",
             w: 100,
             h: 100,
-            description: "NextJs, the full stack framework for web applications"
+            description: "I used Java at McGill where we learn core software engineering concepts"
         },
         logo4: {
             src: "/assets/logos/pythonlogo.png",
-            alt: "Python Logo",
+            alt: "Python",
             w: 100,
             h: 100,
-            description: "NextJs, the full stack framework for web applications"
+            description: "Python was the first language I learned, and used it in multiple hackathons!"
         },
         logo5: {
             src: "/assets/logos/Visual_Studio_Code_1.35_icon.png",
-            alt: "VSCode Logo",
+            alt: "VSCode",
             w: 100,
             h: 100,
-            description: "NextJs, the full stack framework for web applications"
+            description: "VSCode my favourite text editor as it is lightweight and powerful"
         },
         logo6: {
             src: "/assets/logos/reactLogo.png",
-            alt: "React Logo",
+            alt: "React",
             w: 100,
             h: 100,
-            description: "NextJs, the full stack framework for web applications"
+            description: "ReactJs is my favourite front-end library for building applications"
         },
         logo7: {
             src: "/assets/logos/githubLogo.png",
-            alt: "Git Logo",
+            alt: "Git",
             w: 100,
             h: 100,
-            description: "NextJs, the full stack framework for web applications"
+            description: "Git and GitHub are super important to keep version control organized"
         },
         logo8: {
             src: "/assets/logos/JavaScript-logo.png",
-            alt: "Js Logo",
+            alt: "JavaScript",
             w: 100,
             h: 100,
-            description: "NextJs, the full stack framework for web applications"
+            description: "I learned JavasScript when I started web development and I use it almost everyday"
         },
         logo9: {
             src: "/assets/logos/vercelLogo.png",
-            alt: "Vercel Logo",
+            alt: "Vercel",
             w: 100,
             h: 100,
-            description: "NextJs, the full stack framework for web applications"
+            description: "Vercel is host provider that kets you host web applications and serverless functions"
         },
         logo11: {
             src: "/assets/logos/solidityLogo.png",
-            alt: "Solidity Logo",
+            alt: "Solidity",
             w: 100,
             h: 100,
-            description: "NextJs, the full stack framework for web applications"
+            description: "I learned Solidity when I was responsible for devlivering a Web3 application to mint NFTs"
         },
         logo12: {
             src: "/assets/logos/bootstrapLogo.png",
-            alt: "BootStrap Logo",
+            alt: "BootStrap",
             w: 120,
             h: 100,
-            description: "NextJs, the full stack framework for web applications"
+            description: "Bootstrap is my favourite CSS framework for bulding UIs"
         },
         logo13: {
             src: "/assets/logos/Vue.js_Logo_2.png",
-            alt: "Vue Logo",
+            alt: "Vue",
             w: 100,
             h: 100,
-            description: "NextJs, the full stack framework for web applications"
+            description: "I learned Vue in the process of bulding a web3 application"
         },
         logo14: {
             src: "/assets/logos/2560px-Nuxt_logo.png",
-            alt: "Nuxt Logo",
+            alt: "Nuxt",
             w: 100,
             h: 80,
-            description: "NextJs, the full stack framework for web applications"
+            description: "I learned Nuxt the full stack framework in the process of bulding a web3 application"
         },
         logo15: {
             src: "/assets/logos/expressjs.png",
-            alt: "Express Logo",
+            alt: "Express",
             w: 120,
             h: 75,
-            description: "NextJs, the full stack framework for web applications"
+            description: "I learned express when I first started web development, I have used it in almost all my web applications using Node"
         },
         logo16: {
             src: "/assets/logos/mongodbLogo.png",
-            alt: "MongoDB Logo",
+            alt: "MongoDB",
             w: 50,
             h: 100,
-            description: "NextJs, the full stack framework for web applications"
+            description: "MongoDB, the NoSQL that has served me well when bulding web applications"
         },
         logo17: {
             src: "/assets/logos/csharplogo.png",
-            alt: "CSharp Logo",
+            alt: "C#",
             w: 90,
             h: 100,
-            description: "NextJs, the full stack framework for web applications"
+            description: "C# is a lanaguage similar to Java where I have aquired working knowledge"
         },
     }
     let out = [];

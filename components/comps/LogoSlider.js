@@ -13,7 +13,7 @@ export default function LogoSlider(props) {
     let count = 0;
     return (
         <div className="sliderLContainer" >
-            <div className="sliderSContainer">
+            <div className="sliderSContainer" id="sliderSmallCont">
                 {logos.map((item) => {
                     count++;  
                     return (

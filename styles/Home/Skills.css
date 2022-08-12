@@ -20,10 +20,18 @@
 .sliderSContainer:hover {
     animation-play-state: paused;
 }
+.sliderPaused {
+    animation-play-state: paused;
+}
+
+.posRelative {
+    position: relative;
+}
 .lsImgContainer {
     height: 100px;
     width: 100px;
     background-color: #02040a;
+    cursor: pointer;
 }
 .myTextGradient {
     /* background: rgb(174,112,236);
