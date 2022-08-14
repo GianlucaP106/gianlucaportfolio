@@ -1,0 +1,10 @@
+.contactForm {
+    width: 300px; height: 500px;
+    border-radius: 20px;
+}
+
+.contactFormIn {
+    width: 97%; height: 97%;
+    background-color: #0D1116;
+    border-radius: 20px;
+}

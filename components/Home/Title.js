@@ -126,7 +126,7 @@ export default function Title() {
         }, 8000);
     }
 
-    const spans = 1100;
+    const spans = 5000;
     let spanLst = [];
     for (let i = 0; i < spans; i++) {
         spanLst.push(i);

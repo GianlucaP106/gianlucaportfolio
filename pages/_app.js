@@ -12,6 +12,10 @@ import "../styles/comps/SkillPopup.css";
 import "../styles/Home/Title.css";
 import "../styles/Home/Skills.css";
 
+import "../styles/contact/Contact.css";
+import "../styles/contact/ContactForm.css";
+
+
 function MyApp({ Component, pageProps }) {
   return(
     <>

@@ -2,6 +2,7 @@ import Head from 'next/head';
 
 import Title from "../components/Home/Title";
 import Skills from "../components/Home/Skills";
+import Contact from '../components/Contact/Contact';
 
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
             <main className="bgColor">
                 <Title />
                 <Skills />
+                <Contact />
             </main>
         </div>
     );
