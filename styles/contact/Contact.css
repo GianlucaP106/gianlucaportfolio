@@ -1,3 +1,16 @@
 .contactSection {
     height: 100vh;
 }
+
+
+.contactMeCol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 991px) {
+    #contactCol1 { order: 2;}
+    #contactCol2 { order: 1;}
+}

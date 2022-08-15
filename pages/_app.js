@@ -13,6 +13,7 @@ import "../styles/Home/Title.css";
 import "../styles/Home/Skills.css";
 
 import "../styles/contact/Contact.css";
+import "../styles/contact/ContactAni.css";
 import "../styles/contact/ContactForm.css";
 
 

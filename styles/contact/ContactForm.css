@@ -1,10 +1,100 @@
 .contactForm {
-    width: 300px; height: 500px;
+    width: 500px; height: 450px;
     border-radius: 20px;
 }
 
 .contactFormIn {
-    width: 97%; height: 97%;
+    width: 99%; height: 99%;
     background-color: #0D1116;
     border-radius: 20px;
+    padding: 20px;
+    padding-top: 40px;
+}
+
+.inputBox {
+    position: relative;
+}
+.formInput {
+    background-color: #21262d;
+    top: 0;
+    z-index: 1;
+    border: 1px solid gray;
+    width: 100%;
+    height: 50px;
+    outline: none;
+    transition: 500ms;
+    padding: 5px;
+    color: white;
+}
+#formMessage {
+    height: 160px;
+    resize: none;
+}
+
+.inputLabel {
+    position: absolute;
+    display: inline-block;
+    top: 12px;
+    left: 1px;
+    z-index: 10;
+    color: #747474;
+    pointer-events: none;
+    padding-left: 10px;
+    transition: 500ms;
+}
+.formSubmit {
+    width: 100px;
+    height: 40px;
+    color: white;
+    font-size: 18px;
+    border: 0px solid;
+    border-radius: 10px;
+    background: rgb(174,112,236);
+    background: linear-gradient(350deg, rgba(174,112,236,1) 0%, rgba(1,222,190,1) 100%);
+}
+.formSubmit:hover {
+    animation: animateColor 2s linear infinite;
+    
+}
+
+.formInput:focus {
+    border: 1px solid white;
+}
+
+.emailDot {
+    width: 5px; height: 5px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: red;
+    right: 20px;
+    top: 20px;
+    z-index: 10;
+    opacity: 0;
+}
+
+.formInput:focus ~ span ,
+.formInput:valid ~ span {
+    transform: translateX(-8px) translateY(-30px);
+    font-size: 12px;
+    animation: myGradientAnimation 3.5s linear infinite;
+}
+.formInput:focus ~ .emailDot ,
+.formInput:valid ~ .emailDot {
+    opacity: 1;
+}
+
+
+.formCol {
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 575px) {
+    .formCol2 {
+        padding-top: 30px;
+    }
+    .contactForm {
+        height: 530px;
+        width: 350px;
+    }
 }
