@@ -22,6 +22,8 @@
 .navLink {
     color: white;
     transition: 300ms ease-in-out;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .navLink:hover {
     color: #01debe;
