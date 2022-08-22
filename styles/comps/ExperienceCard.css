@@ -1,0 +1,101 @@
+.flip-card {
+    background-color: transparent;
+    width: 90%;
+    height: 300px;
+    border: 0px solid;
+    border-radius: 20px;
+    perspective: 1000px;
+    cursor: pointer;
+    transition: all 500ms ease-in-out;
+}
+.flip-card:hover {
+    width: 100%;
+}
+
+.flip-card-inner {
+    position: relative;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flipCardIn {
+    background-color: #0D1116;
+    width: 98%;
+    height: 97%;
+    border-radius: 20px;
+}
+
+/* .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+} */
+
+.rotateCard {
+    transform: rotateY(180deg);
+}
+.addSizeCard {
+    width: 100%;
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    border-radius: 20px;
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-card-back {
+    border-radius: 20px;
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+    position: relative;
+}
+
+.experienceBackTitle {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.flipCardIn p {
+    margin-bottom: 0;
+}
+
+.experienceExit {
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    width: 20px; height: 20px;
+    border: 0px solid #01debe;
+    border-radius: 50%;
+    background: none;
+    color: white;
+    transition: all 200ms ease-in-out;
+}
+.experienceExit:hover {
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    width: 20px; height: 20px;
+    border: 1px solid #01debe;
+    border-radius: 50%;
+    background-color: #01debe;
+    color: white;
+}
+.experienceLinks {
+    text-decoration: none;
+    animation: none;
+    color: white;
+}
+.experienceLinks:hover {
+}

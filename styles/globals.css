@@ -114,6 +114,12 @@ body {
 .fontSize14 {
   font-size: 14px;
 }
+.fontSize12 {
+  font-size: 12px;
+}
+.fontSize10 {
+  font-size: 10px;
+}
 .centerItem {
   display: flex;
   justify-content: center;
@@ -131,5 +137,11 @@ body {
   justify-content: flex-end;
 }
 .centerText {
+  text-align: center;
+}
+.leftText {
+  text-align: left;
+}
+.rightText {
   text-align: center;
 }

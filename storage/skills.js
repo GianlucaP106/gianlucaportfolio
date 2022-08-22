@@ -23,7 +23,7 @@ export default function getSkills(card) {
         return {
             card: 4,
             title: "Other Technologies",
-            items: ["Git", "GitHub", "VS/VSCode", "REST Architecture", "API Implementation", "UML"]
+            items: ["Git", "GitHub", "VS/VSCode", "REST Architecture", "API Implementation", "UML", "Docker"]
         }
     }
 }

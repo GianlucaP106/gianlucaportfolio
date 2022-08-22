@@ -52,6 +52,20 @@
     background: rgb(174,112,236);
     background: linear-gradient(350deg, rgba(174,112,236,1) 0%, rgba(1,222,190,1) 100%);
 }
+.formReset {
+    color: #747474;
+    cursor: pointer;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 200ms ease-in-out;
+}
+
+.formReset:hover {
+    color: white;
+}
+
 .formSubmit:hover {
     animation: animateColor 2s linear infinite;
     
@@ -96,5 +110,14 @@
     .contactForm {
         height: 530px;
         width: 350px;
+    }
+}
+
+
+@media only screen and (min-width: 1000px) and (min-height: 1000px) {
+    .contactForm {
+        transform: scale(1.5);
+        position: relative;
+        top: 150px;
     }
 }

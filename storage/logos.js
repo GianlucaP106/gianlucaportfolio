@@ -62,7 +62,7 @@ export default function getLogos() {
             alt: "Vercel",
             w: 100,
             h: 100,
-            description: "Vercel is host provider that kets you host web applications and serverless functions"
+            description: "Vercel is host provider that lets you host web applications and serverless functions"
         },
         logo11: {
             src: "/assets/logos/solidityLogo.png",
@@ -111,6 +111,13 @@ export default function getLogos() {
             alt: "C#",
             w: 90,
             h: 100,
+            description: "C# is a lanaguage similar to Java where I have aquired working knowledge"
+        },
+        logo18: {
+            src: "/assets/logos/dockerLogo.png",
+            alt: "C#",
+            w: 100,
+            h: 80,
             description: "C# is a lanaguage similar to Java where I have aquired working knowledge"
         },
     }

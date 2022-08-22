@@ -1,0 +1,23 @@
+.footerBg {
+    background-color: #02040a;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footerLink {
+    cursor: pointer;
+}
+
+.footerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 992px) {
+    .footerLinks {
+        position: relative;
+        right: 50px;
+    }
+}
