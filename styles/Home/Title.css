@@ -109,12 +109,6 @@
     }
 }
 
-@media only screen and (max-width: 600px) {
-    .titleText {
-        left: 20%;
-    } 
-    
-}
 @media only screen and (max-width: 1024px) {
     #homeText1 {
         font-size: 38px;
@@ -127,5 +121,24 @@
     }
     .titleText {
         top: 28%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .titleText {
+        left: 20%;
+        top: 15%;
+    } 
+    .emptyTag1 {
+        top: 5%;
+    }
+    .emptyTag2 {
+        top: 55%;
+    }
+    
+}
+
+@media only screen and (max-height: 680px) {
+    .backContainer {
+        height: 120vh;
     }
 }

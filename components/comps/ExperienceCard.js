@@ -20,6 +20,7 @@ export default function ExperienceCard({ info }) {
                                 <div>
                                     <p className="text-white myfont400">{info.title}</p>
                                     <p className="myBlue myfont400">{info.type} &#8729; {info.location} </p>
+                                    <p className="myBlue myfont400 fontSize10">Click to view more</p>
                                 </div>
                             </div>
                             <div className="col-6 centerItem centerItemV">

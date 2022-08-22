@@ -95,7 +95,8 @@
 .experienceLinks {
     text-decoration: none;
     animation: none;
-    color: white;
+    color: #01debe;
 }
 .experienceLinks:hover {
+    animation: myGradientAnimation 3.5s linear infinite;
 }

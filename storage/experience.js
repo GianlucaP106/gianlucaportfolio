@@ -8,7 +8,7 @@ export default function getExperience(card) {
             title: "Cybersecurity Intern",
             type: "Internship",
             location: "CGI",
-            description: "Leanred about Cyber security basics, security and access control models, IAM concepts and technologies, AWS IAM, Microsoft Azure, IAM automation, docker.Developed a service offer and a proof of concept for automating IAM processes.", 
+            description: "Learned about Cyber security basics, security and access control models, IAM concepts and technologies, AWS IAM, Microsoft Azure, IAM automation, docker.Developed a service offer and a proof of concept for automating IAM processes.", 
             image: "/assets/experience/CGILogo.png",
             width: 160,
             height: 80,
@@ -47,6 +47,7 @@ export default function getExperience(card) {
             location: "DevPro Media",
             image: "/assets/experience/devproLogo2.png",
             description: "Developped a web application and smart contract for Dauntless Dolphins Club NFT. Learned about full stack web development, VueJs, NuxtJs, blockchain development and solidity.", 
+            link: "https://www.devpromedia.com",
             width: 125,
             height: 125,
         }
@@ -55,10 +56,11 @@ export default function getExperience(card) {
         return {
             id: 5,
             title: "Developer",
-            type: "Hackathon",
+            type: "Project",
             location: "UoT",
             image: "/assets/experience/liaLogo-removebg-preview.png",
             description: "Lia : A Memory Aid Assistant (Project) Application to aid people with memory loss by interpreting questions and relaying answers back to the user using artifical intelligence. Won Best Health Hack at NewHacks 2021, University of Toronto.", 
+            github: "https://github.com/mattcab2002/Liassistant",
             width: 200,
             height: 200,
         }
@@ -67,10 +69,11 @@ export default function getExperience(card) {
         return {
             id: 6,
             title: "Developer",
-            type: "Hackathon",
+            type: "Project",
             location: "McGill",
             image: "/assets/experience/pictodocreader.png",
             description: "PictoDocReader : A PDF Image Locator (Project) Full stack development of a software to locate images within PDFs. Won Best Education Hack at McHacks 9, McGill University.", 
+            github: "https://github.com/mattcab2002/PictoDocReader",
             width: 250,
             height: 175,
         }
@@ -79,7 +82,7 @@ export default function getExperience(card) {
         return {
             id: 7,
             title: "Developer",
-            type: "Hackathon",
+            type: "Project",
             location: "Phizer",
             image: "/assets/experience/ai.png",
             description: "PharmaHacks 2022 (Project) Machine learning models to predict the diagnosis of disease based on presence of bacteria in the gut microbiome.", 
@@ -91,7 +94,7 @@ export default function getExperience(card) {
         return {
             id: 8,
             title: "Co-Founder and Project Director",
-            type: "Part-Owner",
+            type: "Organization",
             location: "McGill CHAP",
             image: "/assets/experience/mcgillLogo.png",
             description: "Project Director at McGill CHAP where we build projects, participate in contests and innovate with new technologies in hopes to help student gain experience in computer science.", 
