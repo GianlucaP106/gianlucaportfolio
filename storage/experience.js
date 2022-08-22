@@ -33,7 +33,7 @@ export default function getExperience(card) {
             type: "Contract",
             location: "DDC NFT",
             image: "/assets/experience/nftlogo.png",
-            description: "Developped a web application and smart contract for Dauntless Dolphins Club NFT. Learned about full stack web development, VueJs, NuxtJs, blockchain development and solidity.", 
+            description: "Developed a web application and smart contract for Dauntless Dolphins Club NFT. Learned about full stack web development, VueJs, NuxtJs, blockchain development and solidity.", 
             width: 125,
             height: 125,
             link: "https://dauntlessdolphins.com"
@@ -46,7 +46,7 @@ export default function getExperience(card) {
             type: "Part-Owner",
             location: "DevPro Media",
             image: "/assets/experience/devproLogo2.png",
-            description: "Developped a web application and smart contract for Dauntless Dolphins Club NFT. Learned about full stack web development, VueJs, NuxtJs, blockchain development and solidity.", 
+            description: "Co-founded DevPro media, a development and media agency where we design websites, build web applications and market brands for our clients.", 
             link: "https://www.devpromedia.com",
             width: 125,
             height: 125,

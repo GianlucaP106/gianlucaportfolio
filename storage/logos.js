@@ -125,7 +125,7 @@ export default function getLogos() {
             alt: "SQL",
             w: 150,
             h: 80,
-            description: "I learnt SQL during my internship at CGI where I developed a POC for automating IAM processes."
+            description: "I learned SQL during my internship at CGI where I developed a POC for automating IAM processes."
         },
     }
     let out = [];
