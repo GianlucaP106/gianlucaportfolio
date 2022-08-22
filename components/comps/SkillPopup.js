@@ -28,29 +28,25 @@ export default function SkillPopup(props) {
         }
         setStyle(styles);
 
-        
         setTimeout(() => {
             document.getElementById("skillPopup").classList.add("skillPopupActive");
             // document.getElementById("skillSection").classList.add("posRelative")
+            let percent = 0.4;
+            if (window.innerWidth < 675) percent = 0.30;
             let styles2 = {
                 position: "absolute",
                 top: `${window.scrollY + (0.40*window.innerHeight)}px`,
+                left: `${window.innerWidth * percent}px`
             }
             setStyle(styles2);
         }, 500)
-        // setTimeout(() => {
-        //     document.getElementById("skillSection").classList.add("posRelative");
-        //     setStyle(null);
-        // }, 1600)
-        // setTimeout(() => {
-            // }, 1000)
     }, []);
 
 
     return(
         <div className="skillPopup myGradient centerItem centerItemV" style={style} id="skillPopup">
             <div className="skillPopupIn">
-                <button onClick={exitPopup} className="skillPopupExit">X</button>
+                <button onClick={exitPopup} className="skillPopupExit">x</button>
                 <div className="row" style={{paddingTop: "10px"}}>
                     <div className="col-4 centerItem centerItemV">
                         <Image src={props.prop.item.src} width={(0.30 * props.prop.item.w)} height={(0.30 * props.prop.item.h)} alt={props.prop.item.alt}/>

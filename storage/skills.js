@@ -5,7 +5,7 @@ export default function getSkills(card) {
         return {
             card: 1,
             title: "Programming/Scripting Languages",
-            items: ["Python", "Java", "JavaScript", "Solidity", "C", "C#", "HTML", "CSS",],
+            items: ["Python", "Java", "JavaScript", "Solidity", "C", "C#", "HTML", "CSS", "SQL"],
         }
     }else if (card == 2) {
         return {

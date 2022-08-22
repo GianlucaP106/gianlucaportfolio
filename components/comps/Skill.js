@@ -9,7 +9,7 @@ export default function Skill(props) {
 
     let cutOff = 0;
     if (props.info.card == 1) {
-        cutOff = 4;
+        cutOff = 5;
     }else if (props.info.card == 2) {
         cutOff = 6;
     }else if (props.info.card == 3) {

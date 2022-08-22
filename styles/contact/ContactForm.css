@@ -25,6 +25,7 @@
     transition: 500ms;
     padding: 5px;
     color: white;
+    font-size: 10px;
 }
 #formMessage {
     height: 160px;

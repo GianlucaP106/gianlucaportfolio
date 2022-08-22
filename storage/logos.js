@@ -93,17 +93,17 @@ export default function getLogos() {
             description: "I learned Nuxt the full stack framework in the process of bulding a web3 application"
         },
         logo15: {
-            src: "/assets/logos/expressjs.png",
+            src: "/assets/logos/expresslogo-removebg-preview.png",
             alt: "Express",
             w: 120,
-            h: 75,
+            h: 120,
             description: "I learned express when I first started web development, I have used it in almost all my web applications using Node"
         },
         logo16: {
             src: "/assets/logos/mongodbLogo.png",
             alt: "MongoDB",
-            w: 50,
-            h: 100,
+            w: 40,
+            h: 80,
             description: "MongoDB, the NoSQL that has served me well when bulding web applications"
         },
         logo17: {
@@ -115,10 +115,17 @@ export default function getLogos() {
         },
         logo18: {
             src: "/assets/logos/dockerLogo.png",
-            alt: "C#",
+            alt: "Docker",
             w: 100,
             h: 80,
-            description: "C# is a lanaguage similar to Java where I have aquired working knowledge"
+            description: "I learnt docker during my internship at CGI and I now use it for almost all my applications."
+        },
+        logo19: {
+            src: "/assets/logos/Sql_data_base_with_logo.png",
+            alt: "SQL",
+            w: 150,
+            h: 80,
+            description: "I learnt SQL during my internship at CGI where I developed a POC for automating IAM processes."
         },
     }
     let out = [];

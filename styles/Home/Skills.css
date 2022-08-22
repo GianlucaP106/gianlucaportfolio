@@ -13,7 +13,7 @@
     gap: 20px;
     overflow: hidden;
     position: absolute;
-    animation: logoSlider 10s linear infinite;
+    animation: logoSlider 13s linear infinite;
     background-color: #02040a;
     /* z-index: -1; */
 }
@@ -51,7 +51,7 @@
         left: 0;
     }
     100% {
-        left: -151%;
+        left: -150.75%;
     }
 }
 @keyframes logoSlider2 {
@@ -59,7 +59,7 @@
         left: 0;
     }
     100% {
-        left: -302%;
+        left: -301.5%;
     }
 }
 
@@ -86,10 +86,14 @@
     }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 991px) {
     .sliderSContainer {
         width: 600%;
         animation-name: logoSlider2;
-        /* gap: 20px; */
     }
 }
+/* @media only screen and (min-width: 1000px) {
+    .sliderSContainer {
+        animation-duration: 13s;
+    }
+} */

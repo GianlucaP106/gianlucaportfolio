@@ -18,40 +18,44 @@ export default function ContactForm() {
             emailDot.style.backgroundColor = "red";
         }
     }
-    function handleMissingFields() {
-        document.getElementById('formName').style.border = "1px solid red";
-        document.getElementById('formEmail').style.border = "1px solid red";
-        document.getElementById('formSubject').style.border = "1px solid red";
-        document.getElementById('formMessage').style.border = "1px solid red";
-
+    function handleMissingFields(el) {
+        el.style.border = "1px solid red";
     }
     function handleSubmit() {
-        const name = document.getElementById('formName').value;
-        const email = document.getElementById('formEmail').value;
-        const subject = document.getElementById('formSubject').value;
-        const message = document.getElementById('formMessage').value;
+        const name = document.getElementById('formName');
+        const email = document.getElementById('formEmail');
+        const subject = document.getElementById('formSubject');
+        const message = document.getElementById('formMessage');
         
-        if (!name || !email || !subject || !message) {
-            handleMissingFields();
+        let err = false;
+        if (!(name.value && name.value.length < 50)) {
+            handleMissingFields(name)
             setError(true);
-            return;
+            err = true;
         }
-        if (!validateEmail(email)) {
-            email.style.border = "1px solid red";
+        if (!(email.value && validateEmail(email.value) && email.value.length < 50)) {
+            handleMissingFields(email);
             setError(true);
-            return;
+            err = true;
         }
-        if (message.length > 500 || name.length > 100 || email.length > 75 || subject.length > 100) {
-            handleMissingFields();
+        if (!(subject.value && subject.value.length < 50)) {
+            handleMissingFields(subject);
             setError(true);
-            return;
+            err = true;
         }
+        if (!(message.value && message.value.length < 350)) {
+            handleMissingFields(message);
+            setError(true);
+            err = true;
+        }
+
+        if (err) return;
         
         const jsonData = {
-            name: name,
-            email: email,
-            subject: subject,
-            message: message
+            name: name.value,
+            email: email.value,
+            subject: subject.value,
+            message: message.value,
         }
         // process.env.NEXT_PUBLIC_SERVICE_KEY process.env.NEXT_PUBLIC_TEMPLATE_ID process.env.NEXT_PUBLIC_KEY
         emailjs.send(process.env.NEXT_PUBLIC_SERVICE_KEY, process.env.NEXT_PUBLIC_TEMPLATE_ID, jsonData, process.env.NEXT_PUBLIC_KEY)
