@@ -1,11 +1,9 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import Collapse from "react-bootstrap/Collapse";
-import Link from "next/link";
 
 import { useState, useEffect } from "react";
+import Image from 'next/image';
 
 
 export default function Navibar() {
@@ -19,7 +17,7 @@ export default function Navibar() {
             <Navbar collapseOnSelect expand="lg" className="" variant="dark" > 
             {/* //style={{boxShadow: "0px 4px 2px 0px #c6c6c6"}} */}
                 <Container>
-                    <Navbar.Brand href="/"></Navbar.Brand>
+                    <Navbar.Brand href="/"><Image src="/assets/logos/G LOGO.png" width={75} height={75}/></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto ms-auto">
