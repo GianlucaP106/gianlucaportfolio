@@ -9,7 +9,7 @@ export default function Footer() {
                     <Link href="/experience"><p className="navLink myfont40 footerLink">Experience</p></Link>
                     <Link href="/skills"><p className="navLink myfont40 footerLink">Skills</p></Link>
                 </div>
-                <button className="contactMeButton footerButton"><p style={{margin: "0"}} className="">Contact Me</p></button>
+                <Link href="/contact"><button className="contactMeButton footerButton"><p style={{margin: "0"}} className="">Contact Me</p></button></Link>
             </div>
         </div>
     );
