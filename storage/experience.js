@@ -55,14 +55,14 @@ export default function getExperience(card) {
     else if (card == 5) {
         return {
             id: 5,
-            title: "Developer",
-            type: "Project",
-            location: "UoT",
-            image: "/assets/experience/liaLogo-removebg-preview.png",
-            description: "Lia : A Memory Aid Assistant (Project) Application to aid people with memory loss by interpreting questions and relaying answers back to the user using artifical intelligence. Won Best Health Hack at NewHacks 2021, University of Toronto.", 
-            github: "https://github.com/mattcab2002/Liassistant",
-            width: 200,
-            height: 200,
+            title: "Co-Founder and Project Director",
+            type: "Organization",
+            location: "McGill CHAP",
+            image: "/assets/experience/mcgillLogo.png",
+            description: "Project Director at McGill CHAP where we build projects, participate in contests and innovate with new technologies in hopes to help students gain experience in computer science.", 
+            width: 180,
+            height: 75,
+            
         }
     }
     else if (card == 6) {
@@ -93,13 +93,14 @@ export default function getExperience(card) {
     else if (card == 8) {
         return {
             id: 8,
-            title: "Co-Founder and Project Director",
-            type: "Organization",
-            location: "McGill CHAP",
-            image: "/assets/experience/mcgillLogo.png",
-            description: "Project Director at McGill CHAP where we build projects, participate in contests and innovate with new technologies in hopes to help students gain experience in computer science.", 
-            width: 180,
-            height: 75,
+            title: "Developer",
+            type: "Project",
+            location: "UoT",
+            image: "/assets/experience/liaLogo-removebg-preview.png",
+            description: "Lia : A Memory Aid Assistant (Project) Application to aid people with memory loss by interpreting questions and relaying answers back to the user using artifical intelligence. Won Best Health Hack at NewHacks 2021, University of Toronto.", 
+            github: "https://github.com/mattcab2002/Liassistant",
+            width: 200,
+            height: 200,
         }
     }
     else {
