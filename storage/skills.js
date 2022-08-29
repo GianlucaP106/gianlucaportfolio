@@ -11,7 +11,7 @@ export default function getSkills(card) {
         return {
             card: 2,
             title: "Libraries and Frameworks",
-            items: ["Node", "Next", "Express", "React", "Mongoose", "Nuxt", "Vue", "EtherJs/Web3Js","OpenZepplin", "BootStrap & Bulma", "Spring Boot" ]
+            items: ["Node", "Next", "Express", "React", "Mongoose", "Nuxt", "Vue", "EtherJs/Web3Js","OpenZepplin", "BootStrap & Bulma", "SpringBoot" ]
         }
     }else if (card == 3) {
         return {
