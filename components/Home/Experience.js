@@ -9,8 +9,8 @@ export default function Experience() {
     const [experience, setExperience] = useState(prepRows());
 
     function prepRows() {
-        const rows = 2;
-        const cols = 4;
+        const rows = 3;
+        const cols = 3;
     
         let experiences = [];
         for (let i = 0; i < rows; i++) {
@@ -45,7 +45,7 @@ export default function Experience() {
                             { col.map((item) => {
                                 colCount++;
                                 return (
-                                    <div key={colCount} className={"col-xl-3 col-md-6 centerItem centerItemV mobileExperienceCol"}>
+                                    <div key={colCount} className={"col-lg-4 centerItem centerItemV mobileExperienceCol"}>
                                         <ExperienceCard info={item} />
                                     </div>
                                 );

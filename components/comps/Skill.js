@@ -15,7 +15,7 @@ export default function Skill(props) {
     }else if (props.info.card == 3) {
         cutOff = 1;
     }else if (props.info.card == 4) {
-        cutOff = 4;
+        cutOff = 5;
     }
 
     for (let i = 0; i < cutOff; i++) {

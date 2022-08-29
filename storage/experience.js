@@ -8,7 +8,7 @@ export default function getExperience(card) {
             title: "Cybersecurity Intern",
             type: "Internship",
             location: "CGI",
-            description: "Learned about Cyber security basics, security and access control models, IAM concepts and technologies, AWS IAM, Microsoft Azure, IAM automation and docker. Developed a service offer and a proof of concept for automating IAM processes.", 
+            description: "Learned about Cyber security basics, security and access control models, IAM concepts and technologies, AWS IAM, Microsoft Azure, IAM automation, ethical hacking basics, sql and docker. Developed a service offer and a proof of concept for automating IAM processes.", 
             image: "/assets/experience/CGILogo.png",
             width: 160,
             height: 80,
@@ -101,6 +101,18 @@ export default function getExperience(card) {
             github: "https://github.com/mattcab2002/Liassistant",
             width: 200,
             height: 200,
+        }
+    }
+    else if (card == 9) {
+        return {
+            id: 9,
+            title: "TEAM Mentor",
+            type: "Tomlinson Engagement Award for Mentoring (TEAM) program",
+            location: "McGill",
+            image: "/assets/experience/mcgillLogo.png",
+            description: "Teaching assistance for Digital Logic (ECSE-222). Host office hours answer questions about digital logic", 
+            width: 180,
+            height: 75,
         }
     }
     else {
