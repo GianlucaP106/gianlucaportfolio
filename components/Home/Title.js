@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 
 export default function Title() {
 
+    const [dotlst, setDotlst] = useState([]);
+
     const [tag1, setTag1] = useState("poster");
     const [hi, setHi] = useState('poster');
     const [myName, setMyName] = useState('poster');
@@ -126,23 +128,29 @@ export default function Title() {
         }, 8000);
     }
 
-    const spans = 5000;
-    let spanLst = [];
-    for (let i = 0; i < spans; i++) {
-        spanLst.push(i);
+    function setTitleBg() {
+        let spans = 5000;
+        if (window.innerWidth < 550) spans = 1000;
+        let spanLst = [];
+        for (let i = 0; i < spans; i++) {
+            spanLst.push(i);
+        }
+        setDotlst(spanLst);
     }
-    let count = 0;
-
+    
     useEffect(() => {
+        setTitleBg()
         setTimeout( () => {
             startTyping();
         }, 1000);
-    },[])
+    },[]);
+
     const tag = "<>";
+    let count = 0;
     return(
         <section>
             <div className="backContainer">
-                {spanLst.map(() => {
+                {dotlst.map(() => {
                     count++;
                     return(
                         <span key={count} className="theDot"></span>
