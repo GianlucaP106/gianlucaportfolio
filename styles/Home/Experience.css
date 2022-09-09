@@ -4,6 +4,6 @@
 
 @media only screen and (min-height: 1200px) {
     .experienceSection {
-        height: 80vh;
+        /* height: 80vh; */
     }
 }

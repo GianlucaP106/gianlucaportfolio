@@ -46,7 +46,7 @@ export default function getExperience(card) {
             type: "Part-Owner",
             location: "DevPro Media",
             image: "/assets/experience/devproLogo2.png",
-            description: "Co-founded DevPro media, a development and media agency where we design websites, build web applications and market brands for our clients.", 
+            description: "Co-founded DevPro media, a development, media and marketing agency where we design websites, build web applications and market brands for our clients.", 
             link: "https://www.devpromedia.com",
             width: 125,
             height: 125,

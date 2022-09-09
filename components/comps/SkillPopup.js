@@ -32,7 +32,9 @@ export default function SkillPopup(props) {
             document.getElementById("skillPopup").classList.add("skillPopupActive");
             // document.getElementById("skillSection").classList.add("posRelative")
             let percent = 0.4;
-            if (window.innerWidth < 675) percent = 0.30;
+            if (window.innerWidth < 675) percent = 0.33;
+            if (window.innerWidth < 550) percent = 0.28;
+            if (window.innerWidth < 450) percent = 0.22;
             let styles2 = {
                 position: "absolute",
                 top: `${window.scrollY + (0.40*window.innerHeight)}px`,
