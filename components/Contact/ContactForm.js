@@ -21,7 +21,7 @@ export default function ContactForm() {
     function handleMissingFields(el) {
         el.style.border = "1px solid red";
     }
-    function handleSubmit() {
+    async function handleSubmit() {
         const name = document.getElementById('formName');
         const email = document.getElementById('formEmail');
         const subject = document.getElementById('formSubject');
@@ -50,12 +50,27 @@ export default function ContactForm() {
         }
 
         if (err) return;
+
+        let ipinfo = null;
+        try {
+            const response = await fetch("https://ipinfo.io/json");
+            ipinfo = await response.json();
+        }catch (e) {
+            console.log(e);
+        }
         
         const jsonData = {
             name: name.value,
             email: email.value,
             subject: subject.value,
             message: message.value,
+            ip: ipinfo.ip,
+            hostname: ipinfo.hostname,
+            location: `${ipinfo.city}, ${ipinfo.region}, ${ipinfo.country}`,
+            loc: ipinfo.loc,
+            org: ipinfo.org,
+            postal: ipinfo.postal,
+            timezone: ipinfo.timezone,
         }
         // process.env.NEXT_PUBLIC_SERVICE_KEY process.env.NEXT_PUBLIC_TEMPLATE_ID process.env.NEXT_PUBLIC_KEY
         emailjs.send(process.env.NEXT_PUBLIC_SERVICE_KEY, process.env.NEXT_PUBLIC_TEMPLATE_ID, jsonData, process.env.NEXT_PUBLIC_KEY)
