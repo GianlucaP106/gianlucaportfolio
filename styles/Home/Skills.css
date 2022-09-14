@@ -13,7 +13,7 @@
     gap: 20px;
     overflow: hidden;
     position: absolute;
-    animation: logoSlider 13s linear infinite;
+    animation: logoSlider 20s linear infinite;
     background-color: #02040a;
     /* z-index: -1; */
 }
