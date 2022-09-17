@@ -127,6 +127,13 @@ export default function getLogos() {
             h: 80,
             description: "I learned SQL during my internship at CGI where I developed a POC for automating IAM processes."
         },
+        logo20: {
+            src: "/assets/logos/linuxIcon.png",
+            alt: "SQL",
+            w: 80,
+            h: 90,
+            description: "I used linux machines when interacting with azure cloud services and on personal projects."
+        },
     }
     let out = [];
 
