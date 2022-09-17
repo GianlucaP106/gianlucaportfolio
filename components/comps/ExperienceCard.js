@@ -58,7 +58,7 @@ export default function ExperienceCard({ info }) {
                         {(info.link || info.github) && 
                             <div className="row experienceBackTitle">
                                 {info.link && <a href={info.link} className="experienceLinks"><p>View More</p></a>}
-                                {info.github && <a href={info.github} className="experienceLinks"><p>GitHub</p></a>}
+                                {info.github && <a href={info.github} className="experienceLinks"><p>View GitHub</p></a>}
                             </div>
                         }
                     </div>
