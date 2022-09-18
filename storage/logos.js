@@ -134,6 +134,13 @@ export default function getLogos() {
             h: 90,
             description: "I used linux machines when interacting with azure cloud services and on personal projects."
         },
+        logo21: {
+            src: "/assets/logos/hacking.png",
+            alt: "SQL",
+            w: 120,
+            h: 120,
+            description: "I learned about ethical hacking during my internship at CGI where I took a series of courses on the subject."
+        },
     }
     let out = [];
 
