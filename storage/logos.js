@@ -58,88 +58,88 @@ export default function getLogos() {
             description: "I learned JavasScript when I started web development and I use it almost everyday"
         },
         logo9: {
-            src: "/assets/logos/vercelLogo.png",
-            alt: "Vercel",
-            w: 100,
-            h: 100,
-            description: "Vercel is host provider that lets you host web applications and serverless functions"
-        },
-        logo11: {
             src: "/assets/logos/solidityLogo.png",
             alt: "Solidity",
             w: 100,
             h: 100,
             description: "I learned Solidity when I was responsible for devlivering a Web3 application to mint NFTs"
         },
-        logo12: {
-            src: "/assets/logos/bootstrapLogo.png",
-            alt: "BootStrap",
-            w: 120,
-            h: 100,
-            description: "Bootstrap is my favourite CSS framework for bulding UIs"
-        },
-        logo13: {
-            src: "/assets/logos/Vue.js_Logo_2.png",
-            alt: "Vue",
-            w: 100,
-            h: 100,
-            description: "I learned Vue in the process of bulding a web3 application"
-        },
-        logo14: {
-            src: "/assets/logos/2560px-Nuxt_logo.png",
-            alt: "Nuxt",
-            w: 100,
-            h: 80,
-            description: "I learned Nuxt the full stack framework in the process of bulding a web3 application"
-        },
-        logo15: {
-            src: "/assets/logos/expresslogo-removebg-preview.png",
-            alt: "Express",
-            w: 120,
-            h: 120,
-            description: "I learned express when I first started web development, I have used it in almost all my web applications using Node"
-        },
-        logo16: {
-            src: "/assets/logos/mongodbLogo.png",
-            alt: "MongoDB",
-            w: 40,
-            h: 80,
-            description: "MongoDB, the NoSQL that has served me well when bulding web applications"
-        },
-        logo17: {
-            src: "/assets/logos/csharplogo.png",
-            alt: "C#",
-            w: 90,
-            h: 100,
-            description: "C# is a lanaguage similar to Java where I have aquired working knowledge"
-        },
-        logo18: {
+        logo10: {
             src: "/assets/logos/dockerLogo.png",
             alt: "Docker",
             w: 100,
             h: 80,
             description: "I learnt docker during my internship at CGI and I now use it for almost all my applications."
         },
-        logo19: {
+        logo11: {
             src: "/assets/logos/Sql_data_base_with_logo.png",
             alt: "SQL",
             w: 150,
             h: 80,
             description: "I learned SQL during my internship at CGI where I developed a POC for automating IAM processes."
         },
-        logo20: {
+        logo12: {
             src: "/assets/logos/linuxIcon.png",
             alt: "SQL",
             w: 80,
             h: 90,
             description: "I used linux machines when interacting with azure cloud services and on personal projects."
         },
-        logo21: {
+        logo13: {
             src: "/assets/logos/hacking.png",
             alt: "SQL",
             w: 120,
             h: 120,
             description: "I learned about ethical hacking during my internship at CGI where I took a series of courses on the subject."
+        },
+        logo14: {
+            src: "/assets/logos/expresslogo-removebg-preview.png",
+            alt: "Express",
+            w: 120,
+            h: 120,
+            description: "I learned express when I first started web development, I have used it in almost all my web applications using Node"
+        },
+        logo15: {
+            src: "/assets/logos/mongodbLogo.png",
+            alt: "MongoDB",
+            w: 40,
+            h: 80,
+            description: "MongoDB, the NoSQL that has served me well when bulding web applications"
+        },
+        logo16: {
+            src: "/assets/logos/bootstrapLogo.png",
+            alt: "BootStrap",
+            w: 120,
+            h: 100,
+            description: "Bootstrap is my favourite CSS framework for bulding UIs"
+        },
+        logo17: {
+            src: "/assets/logos/Vue.js_Logo_2.png",
+            alt: "Vue",
+            w: 100,
+            h: 100,
+            description: "I learned Vue in the process of bulding a web3 application"
+        },
+        logo18: {
+            src: "/assets/logos/2560px-Nuxt_logo.png",
+            alt: "Nuxt",
+            w: 100,
+            h: 80,
+            description: "I learned Nuxt the full stack framework in the process of bulding a web3 application"
+        },
+        logo19: {
+            src: "/assets/logos/vercelLogo.png",
+            alt: "Vercel",
+            w: 100,
+            h: 100,
+            description: "Vercel is host provider that lets you host web applications and serverless functions"
+        },
+        logo20: {
+            src: "/assets/logos/csharplogo.png",
+            alt: "C#",
+            w: 90,
+            h: 100,
+            description: "C# is a lanaguage similar to Java where I have aquired working knowledge"
         },
     }
     let out = [];
