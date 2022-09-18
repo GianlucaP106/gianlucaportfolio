@@ -87,7 +87,7 @@ export default function getLogos() {
         },
         logo13: {
             src: "/assets/logos/hacking.png",
-            alt: "SQL",
+            alt: "Ethical Hacking",
             w: 120,
             h: 120,
             description: "I learned about ethical hacking during my internship at CGI where I took a series of courses on the subject."
