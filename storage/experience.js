@@ -54,15 +54,14 @@ export default function getExperience(card) {
     }
     else if (card == 5) {
         return {
-            id: 5,
-            title: "Co-Founder and Project Director",
-            type: "Organization",
-            location: "McGill CHAP",
+            id: 9,
+            title: "TEAM Mentor",
+            type: "Tomlinson Engagement Award for Mentoring (TEAM) program",
+            location: "McGill",
             image: "/assets/experience/mcgillLogo.png",
-            description: "Project Director at McGill CHAP where we build projects, participate in contests and innovate with new technologies in hopes to help students gain experience in computer science.", 
+            description: "Teaching assistance for Digital Logic (ECSE-222). Host office hours answer questions about digital logic", 
             width: 180,
             height: 75,
-            
         }
     }
     else if (card == 6) {
@@ -105,14 +104,15 @@ export default function getExperience(card) {
     }
     else if (card == 9) {
         return {
-            id: 9,
-            title: "TEAM Mentor",
-            type: "Tomlinson Engagement Award for Mentoring (TEAM) program",
-            location: "McGill",
+            id: 5,
+            title: "Co-Founder and Project Director",
+            type: "Organization",
+            location: "McGill CHAP",
             image: "/assets/experience/mcgillLogo.png",
-            description: "Teaching assistance for Digital Logic (ECSE-222). Host office hours answer questions about digital logic", 
+            description: "Project Director at McGill CHAP where we build projects, participate in contests and innovate with new technologies in hopes to help students gain experience in computer science.", 
             width: 180,
             height: 75,
+            
         }
     }
     else {
