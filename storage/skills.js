@@ -5,13 +5,13 @@ export default function getSkills(card) {
         return {
             card: 1,
             title: "Programming/Scripting Languages",
-            items: ["Python", "Java", "JavaScript", "Solidity", "C", "ArmV7", "HTML", "CSS", "SQL", "Bash"],
+            items: ["Python", "Java", "JavaScript", "Solidity", "C", "ARM Assembly", "HTML", "CSS", "SQL", "Bash"],
         }
     }else if (card == 2) {
         return {
             card: 2,
             title: "Libraries and Frameworks",
-            items: ["Spring MVC & ORM", "Spring Security", "OAuth2", "Node", "Next", "Express", "React", "Vue", "EtherJs/Web3Js","OpenZepplin", "BootStrap & Bulma" ]
+            items: ["Spring MVC & ORM", "Spring Security", "OAuth", "Node", "Next", "Express", "React", "Vue", "EtherJs/Web3Js","OpenZepplin", "BootStrap & Bulma" ]
         }
     }else if (card == 3) {
         return {
