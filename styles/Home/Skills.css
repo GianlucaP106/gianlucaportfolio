@@ -37,13 +37,6 @@
     animation: myGradientAnimation 3.5s linear infinite;
 
 }
-.skillLogoAnim {
-    transition: transform 500ms ease-in-out;
-    z-index: 1;
-}
-.skillLogoAnim:hover {
-    transform: scale(1.2);
-}
 
 
 @keyframes logoSlider {

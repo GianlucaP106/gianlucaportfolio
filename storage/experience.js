@@ -1,9 +1,8 @@
 
 
 export default function getExperience(card) {
-
-    if (card == 1) {
-        return {
+    return [
+        {
             id: 1,
             title: "Cybersecurity Intern",
             type: "Internship",
@@ -12,10 +11,8 @@ export default function getExperience(card) {
             image: "/assets/experience/CGILogo.png",
             width: 160,
             height: 80,
-        }
-    }
-    else if (card == 2) {
-        return {
+        },
+        {
             id: 2,
             title: "Web Developer",
             type: "Part-Time",
@@ -24,10 +21,8 @@ export default function getExperience(card) {
             description: "Developped a web site for Voysis's new company GoingVoIP. Learned about web development, NextJs and React.", 
             width: 180,
             height: 80,
-        }
-    }
-    else if (card == 3) {
-        return {
+        },
+        {
             id: 3,
             title: "Full Stack Blockchain Developer",
             type: "Contract",
@@ -37,10 +32,8 @@ export default function getExperience(card) {
             width: 125,
             height: 125,
             link: "https://dauntlessdolphins.com"
-        }
-    }
-    else if (card == 4) {
-        return {
+        },
+        {
             id: 4,
             title: "Co-Founder and Developer",
             type: "Part-Owner",
@@ -50,10 +43,8 @@ export default function getExperience(card) {
             link: "https://www.devpromedia.com",
             width: 125,
             height: 125,
-        }
-    }
-    else if (card == 5) {
-        return {
+        },
+        {
             id: 9,
             title: "TEAM Mentor",
             type: "Tomlinson Engagement Award for Mentoring (TEAM) program",
@@ -62,10 +53,8 @@ export default function getExperience(card) {
             description: "Teaching assistance for Digital Logic (ECSE-222). Host office hours answer questions about digital logic", 
             width: 180,
             height: 75,
-        }
-    }
-    else if (card == 6) {
-        return {
+        },
+        {
             id: 6,
             title: "Developer",
             type: "Project",
@@ -75,10 +64,8 @@ export default function getExperience(card) {
             github: "https://github.com/mattcab2002/PictoDocReader",
             width: 250,
             height: 175,
-        }
-    }
-    else if (card == 7) {
-        return {
+        },
+        {
             id: 7,
             title: "Developer",
             type: "Project",
@@ -87,10 +74,8 @@ export default function getExperience(card) {
             description: "PharmaHacks 2022 (Project) Machine learning models to predict the diagnosis of disease based on presence of bacteria in the gut microbiome.", 
             width: 150,
             height: 150,
-        }
-    }
-    else if (card == 8) {
-        return {
+        },
+        {
             id: 8,
             title: "Developer",
             type: "Project",
@@ -100,22 +85,17 @@ export default function getExperience(card) {
             github: "https://github.com/mattcab2002/Liassistant",
             width: 200,
             height: 200,
-        }
-    }
-    else if (card == 9) {
-        return {
-            id: 5,
-            title: "Co-Founder and Project Director",
-            type: "Organization",
-            location: "McGill CHAP",
-            image: "/assets/experience/mcgillLogo.png",
-            description: "Project Director at McGill CHAP where we build projects, participate in contests and innovate with new technologies in hopes to help students gain experience in computer science.", 
-            width: 180,
-            height: 75,
+        },
+        // {
+        //     id: 5,
+        //     title: "Co-Founder and Project Director",
+        //     type: "Organization",
+        //     location: "McGill CHAP",
+        //     image: "/assets/experience/mcgillLogo.png",
+        //     description: "Project Director at McGill CHAP where we build projects, participate in contests and innovate with new technologies in hopes to help students gain experience in computer science.", 
+        //     width: 180,
+        //     height: 75,
             
-        }
-    }
-    else {
-        return false;
-    }
+        // }
+    ];
 }

@@ -1,4 +1,4 @@
-
+import { motion } from "framer-motion";
 
 export default function Skill(props) {
 
@@ -25,8 +25,14 @@ export default function Skill(props) {
         col2.push(skills[i]);
     }
     let key = 0;
+    let transDur;
+    if (props.info.card > 1) {
+        transDur = (props.info.card - 2) * 0.2 + 0.5
+    }else {
+        transDur = (props.info.card) * 0.2 + 0.5
+    }
     return (
-        <div className="skillContainerBorder myGradient centerItem centerItemV">
+        <motion.div initial={{ x: "-10%", y: "-10%", opacity: 0 }} whileInView={{ x: 0, y: 0, opacity: 1 }} viewport={{ once: true }} transition={{ duration: transDur, delay: 0.5 }} className="skillContainerBorder myGradient centerItem centerItemV">
             <div className="skillContainerIn">
                 <div className="row centerText" style={{paddingTop: "25px"}}>
                     <p className="myBlue myfont400 fontSize24" >{props.info.title}</p>
@@ -55,6 +61,6 @@ export default function Skill(props) {
                     </div>}
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 }

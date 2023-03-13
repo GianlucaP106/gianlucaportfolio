@@ -9,7 +9,7 @@
     transition: all 500ms ease-in-out;
 }
 .flip-card:hover {
-    width: 100%;
+    /* width: 100%; */
 }
 
 .flip-card-inner {
@@ -35,9 +35,6 @@
 
 .rotateCard {
     transform: rotateY(180deg);
-}
-.addSizeCard {
-    width: 100%;
 }
 
 .flip-card-front, .flip-card-back {

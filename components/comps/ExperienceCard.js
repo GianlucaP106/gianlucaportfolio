@@ -4,10 +4,8 @@ export default function ExperienceCard({ info }) {
 
     function backSide() {
         document.getElementById(`flipCardInner${info.id}`).classList.add("rotateCard");
-        document.getElementById(`flipCard${info.id}`).classList.add("addSizeCard");
     }
     function frontSide() {
-        document.getElementById(`flipCard${info.id}`).classList.remove("addSizeCard");
         document.getElementById(`flipCardInner${info.id}`).classList.remove("rotateCard");
     }
     return (
