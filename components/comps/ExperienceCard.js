@@ -23,7 +23,9 @@ export default function ExperienceCard({ info }) {
                             </div>
                             <div className="col-6 centerItem centerItemV">
                                 <div>
-                                    <Image src={info.image} height={info.height} width={info.width} alt={info.title}/>
+                                </div>
+                                <div className="logoImageTitle">
+                                    <Image src={info.image} fill style={{ objectFit: "contain" }} alt={info.title}/>
                                 </div>
                             </div>
                         </div>
@@ -36,8 +38,8 @@ export default function ExperienceCard({ info }) {
                             <div className="experienceBackTitle">
                                 <p className="text-white myfont400 fontSize12">{info.title}</p>
                                 <p className="myBlue myfont400 fontSize12">{info.type} &#8729; {info.location} </p>
-                                <div>
-                                    <Image src={info.image} height={info.height * 0.25} width={info.width * 0.25} alt={info.title}/>
+                                <div className="logoImage">
+                                    <Image src={info.image} fill style={{ objectFit: "contain", objectPosition: "center" }} alt={info.title}/>
                                 </div>
                             </div>
                         </div>

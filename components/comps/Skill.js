@@ -7,16 +7,7 @@ export default function Skill(props) {
 
     const skills = props.info.items;
 
-    let cutOff = 0;
-    if (props.info.card == 1) {
-        cutOff = 5;
-    }else if (props.info.card == 2) {
-        cutOff = 6;
-    }else if (props.info.card == 3) {
-        cutOff = 1;
-    }else if (props.info.card == 4) {
-        cutOff = 5;
-    }
+    let cutOff = Math.ceil(skills.length / 2);
 
     for (let i = 0; i < cutOff; i++) {
         col1.push(skills[i]);
@@ -32,7 +23,7 @@ export default function Skill(props) {
         transDur = (props.info.card) * 0.2 + 0.5
     }
     return (
-        <motion.div initial={{ x: "-10%", y: "-10%", opacity: 0 }} whileInView={{ x: 0, y: 0, opacity: 1 }} viewport={{ once: true }} transition={{ duration: transDur, delay: 0.5 }} className="skillContainerBorder myGradient centerItem centerItemV">
+        <motion.div initial={{ x: "-10%", opacity: 0 }} whileInView={{ x: 0, y: 0, opacity: 1 }} viewport={{ once: true }} transition={{ duration: transDur, delay: 0.5 }} className="skillContainerBorder myGradient centerItem centerItemV">
             <div className="skillContainerIn">
                 <div className="row centerText" style={{paddingTop: "25px"}}>
                     <p className="myBlue myfont400 fontSize24" >{props.info.title}</p>

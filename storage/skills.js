@@ -5,25 +5,25 @@ export default function getSkills(card) {
         return {
             card: 1,
             title: "Programming/Scripting Languages",
-            items: ["Python", "Java", "JavaScript", "Solidity", "C", "ARM Assembly", "HTML", "CSS", "SQL", "Bash"],
+            items: ["Java", "Python", "JavaScript & TypeScript", "C", "ARM Assembly", "HTML", "CSS", "SQL", "Bash & ZSH (Unix command lines)"],
         }
     }else if (card == 2) {
         return {
             card: 2,
             title: "Libraries and Frameworks",
-            items: ["Spring MVC & ORM", "Spring Security", "OAuth", "Node", "Next", "Express", "React", "Vue", "EtherJs/Web3Js","OpenZepplin", "BootStrap & Bulma" ]
+            items: ["Spring Framework", "Spring Security", "Spring Data, Web, GraphQL", "Spring Oauth2 Authorization, Resource, Client", "Spring for Apache Kafka", "OAuth", "NodeJs", "NextJs", "ExpressJs", "ReactJs", "Material UI"]
         }
     }else if (card == 3) {
         return {
             card: 3,
-            title: "Systems",
-            items: ["MacOS", "Linux"]
+            title: "Systems, Platforms And Tools",
+            items: ["Github", "Git", "Microsoft Azure", "Docker", "VSCode", "IntelliJ", "MacOS", "Linux", "PostgrSQL", "MySQL", "MongoDB", "Github Actions", "Kubernetes fundamentals"]
         }
     }else if (card == 4) {
         return {
             card: 4,
-            title: "Other Technologies",
-            items: ["Git", "GitHub", "VS/VSCode", "REST Architecture", "MongoDB", "MySQL", "API Implementation", "UML", "Docker", "Ethical Hacking Basics"]
+            title: "Concepts and Other Technologies",
+            items: ["Software architecture", "Application security", "REST", "GraphQL", "Ethical Hacking & Cybersecurity fundamentals"]
         }
     }
 }

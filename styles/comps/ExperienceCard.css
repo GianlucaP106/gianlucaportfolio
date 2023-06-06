@@ -97,3 +97,15 @@
 .experienceLinks:hover {
     animation: myGradientAnimation 3.5s linear infinite;
 }
+
+.logoImage {
+    position: relative;
+    height: 100%;
+    width: 60px;
+}
+
+.logoImageTitle {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
