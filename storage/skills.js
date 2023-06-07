@@ -11,7 +11,7 @@ export default function getSkills(card) {
         return {
             card: 2,
             title: "Libraries and Frameworks",
-            items: ["Spring Framework", "Spring Security", "Spring Data, Web, GraphQL", "Spring Oauth2 Authorization, Resource, Client", "Spring for Apache Kafka", "OAuth", "NodeJs", "NextJs", "ExpressJs", "ReactJs", "Material UI"]
+            items: ["Spring Framework", "Spring Security", "Spring Data, Web, GraphQL", "Spring OAuth2 Authorization, Resource, Client", "Spring for Apache Kafka", "OAuth", "NodeJs", "NextJs", "ExpressJs", "ReactJs", "Material UI"]
         }
     }else if (card == 3) {
         return {
