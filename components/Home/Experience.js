@@ -17,7 +17,7 @@ export default function Experience() {
             </div>
             <div className="experienceRows">
                 <div className="row">
-                    { experience.reverse().map((item, index) => {
+                    {experience.reverse().map((item, index) => {
                         let transitionDur;
                         if (index > 3) {
                             transitionDur = (index - 4)*0.1 + 0.6
@@ -38,7 +38,7 @@ export default function Experience() {
                         }
                         return (
                                 <motion.div initial={init} whileInView={onview} transition={{ duration: transitionDur, delay: 0.5 }} viewport={{ once: true }} key={index} className="col-lg-3 col-md-6 centerItem centerItemV mobileExperienceCol">
-                                    <motion.div whileHover={onhover} transition={{ duration: 0.3 }}>
+                                    <motion.div className="centerItem centerItemV" whileHover={onhover} transition={{ duration: 0.3 }}>
                                         <ExperienceCard info={item} />
                                     </motion.div>
                                 </motion.div>

@@ -24,7 +24,7 @@ export default function Navibar() {
                             <Nav.Link className="navLink myfont400" href="/">Home</Nav.Link>
                             <Nav.Link className="navLink myfont400" href="/experience" > Experience</Nav.Link>
                             <Nav.Link className="navLink myfont400" href="/skills" > Skills</Nav.Link>
-                            <Nav.Link className="navLink myfont400" href="/assets/Gianluca Piccirillo C.V. 2022.pdf" target={"_blank"} > Download my Resume</Nav.Link>
+                            <Nav.Link className="navLink myfont400" href="/assets/Gianluca Piccirillo C.V. 2023.pdf" target={"_blank"} > Download my Resume</Nav.Link>
                         </Nav>
                         <Nav>
                             <Nav.Link style={{marginLeft: "10px"}} href="/contact"><button className="contactMeButton"><p style={{margin: "0"}} className="">Contact Me</p></button></Nav.Link>

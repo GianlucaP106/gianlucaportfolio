@@ -7,7 +7,7 @@ export default function Skill(props) {
 
     const skills = props.info.items;
 
-    let cutOff = Math.ceil(skills.length / 2);
+    let cutOff = props.info.card == 2 ? 4 : Math.ceil(skills.length / 2);
 
     for (let i = 0; i < cutOff; i++) {
         col1.push(skills[i]);
