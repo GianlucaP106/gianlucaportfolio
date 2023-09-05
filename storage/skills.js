@@ -23,7 +23,7 @@ export default function getSkills(card) {
         return {
             card: 4,
             title: "Concepts and Other Technologies",
-            items: ["Software architecture", "Application security", "REST", "GraphQL", "Ethical Hacking & Cybersecurity fundamentals"]
+            items: ["Software architecture", "Application security", "REST", "GraphQL", "Ethical Hacking & Cybersecurity fundamentals", "Web service penetration testing fundamentals"]
         }
     }
 }

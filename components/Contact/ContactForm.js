@@ -64,21 +64,33 @@ export default function ContactForm() {
             email: email.value,
             subject: subject.value,
             message: message.value,
-            ip: ipinfo.ip,
-            hostname: ipinfo.hostname,
-            location: `${ipinfo.city}, ${ipinfo.region}, ${ipinfo.country}`,
-            loc: ipinfo.loc,
-            org: ipinfo.org,
-            postal: ipinfo.postal,
-            timezone: ipinfo.timezone,
+            ip: ipinfo?.ip,
+            hostname: ipinfo?.hostname,
+            location: `${ipinfo?.city}, ${ipinfo?.region}, ${ipinfo?.country}`,
+            loc: ipinfo?.loc,
+            org: ipinfo?.org,
+            postal: ipinfo?.postal,
+            timezone: ipinfo?.timezone,
         }
-        // process.env.NEXT_PUBLIC_SERVICE_KEY process.env.NEXT_PUBLIC_TEMPLATE_ID process.env.NEXT_PUBLIC_KEY
-        emailjs.send(process.env.NEXT_PUBLIC_SERVICE_KEY, process.env.NEXT_PUBLIC_TEMPLATE_ID, jsonData, process.env.NEXT_PUBLIC_KEY)
-        .then((result) => {
-            console.log(result.text);
-        }, (error) => {
-            console.log(error.text);
-        });
+
+        let url = new URL(window.location.href);
+        url.pathname = "/api/contact";
+        url.searchParams.set("name", jsonData.name);
+        url.searchParams.set("email", jsonData.email);
+        url.searchParams.set("subject", jsonData.subject);
+        url.searchParams.set("message", jsonData.message);
+        url.searchParams.set("ip", jsonData.ip);
+        url.searchParams.set("hostname", jsonData.hostname);
+        url.searchParams.set("location", jsonData.location);
+        url.searchParams.set("loc", jsonData.loc);
+        url.searchParams.set("org", jsonData.org);
+        url.searchParams.set("postal", jsonData.postal);
+        url.searchParams.set("timezone", jsonData.timezone);
+        let response = await fetch(url.toString());
+        if (response.status !== 200) {
+            alert("There was an error processing the form");
+            return;
+        }
         resetForm();
     }
     function erase() {
@@ -106,7 +118,7 @@ export default function ContactForm() {
     }
 
     return(
-        <div onClick={handleContactFormClick} className="contactForm myGradient centerItem centerItemV">
+        <div onSubmit={handleContactFormClick} className="contactForm myGradient centerItem centerItemV">
             <div className="contactFormIn">
                 <form>
                     <div className="row">
