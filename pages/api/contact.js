@@ -81,6 +81,7 @@ export default async function handler(req, res) {
         fetch("https://api.mailersend.com/v1/email", requestOptions)
             .then(response => response.text())
             .then(result => {
+                console.log(result)
                 res.status(200).end();
             })
             .catch(error => res.status(400).end());
