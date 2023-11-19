@@ -17,7 +17,7 @@ export default function Experience() {
             </div>
             <div className="experienceRows">
                 <div className="row">
-                    {experience.map((item, index) => {
+                    {experience.reverse().map((item, index) => {
                         let transitionDur;
                         if (index > 3) {
                             transitionDur = (index - 4)*0.1 + 0.6
