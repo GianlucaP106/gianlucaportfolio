@@ -1,0 +1,25 @@
+@keyframes animateColor {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.contactMeButton {
+    width: 150px;
+    height: 50px;
+    color: white;
+    font-size: 18px;
+    border: 0px solid;
+    border-radius: 10px;
+    background: rgb(174, 112, 236);
+    background: linear-gradient(350deg, rgba(174, 112, 236, 1) 0%, rgba(1, 222, 190, 1) 100%);
+}
+
+.contactMeButton:hover {
+    animation: animateColor 2s linear infinite;
+
+}
+

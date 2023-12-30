@@ -1,0 +1,36 @@
+.typingEf {
+    /* position: relative; */
+}
+.op0 { opacity: 0; }
+
+.typingEf::after {
+    content: "";
+    position: relative;
+    border-right: 2px solid white;
+    height: 90%;
+    right: -5px;
+    animation: typeBlink 1s infinite steps(2);
+}
+
+.myName {
+    background: rgb(174,112,236);
+    background: linear-gradient(350deg, rgba(174,112,236,1) 0%, rgba(1,222,190,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /*animation: animateColor 5s linear infinite;*/
+}
+
+/*@keyframes animateColor {*/
+/*    0% {*/
+/*        filter: hue-rotate(0deg);*/
+/*    }*/
+/*    100% {*/
+/*        filter: hue-rotate(360deg);*/
+/*    }*/
+/*}*/
+
+@keyframes typeBlink {
+    0% {
+        opacity: 0;
+    }
+}
