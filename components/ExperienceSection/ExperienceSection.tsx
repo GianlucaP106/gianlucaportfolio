@@ -18,7 +18,7 @@ export default function ExperienceSection(props: ExperienceSectionProps) {
                     return (
                         <div key={index} className={"w-full flex justify-center items-center px-8 sm:px-20 md:px-5"}>
                             <ExperiencePopup position={exp.title} company={exp.location} imageUrl={exp.image}
-                                            description={exp.description} />
+                                            description={exp.description} type={exp.type} />
                         </div>
                     )
                 })}
