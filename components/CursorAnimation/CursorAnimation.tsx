@@ -10,14 +10,16 @@ function initCanvas() {
     const canvas = document.getElementById("canvas") as HTMLCanvasElement;
     const ctx = canvas.getContext("2d") as CanvasRenderingContext2D;
 
-    canvas.height = document.body.scrollHeight;
+    canvas.height = document.body.scrollHeight + 100;
     canvas.width = window.innerWidth;
 
-    let trail: { x: number, y: number, opacity: number }[] = [];
+    let trail: { x: number, y: number, opacity: number, color: string }[] = [];
+    let colorIndex = 0;
+    const colors = ['#01debe', '#81a4d8', '#9491e1'];
 
     document.addEventListener('mousemove', (event) => {
-        trail.push({ x: event.pageX, y: event.pageY, opacity: 1.0 });
-
+        trail.push({ x: event.pageX, y: event.pageY, opacity: 1.0, color: interpolateColor() });
+        colorIndex = (colorIndex + 1) % colors.length;
     });
 
     // Update canvas dimensions on window resize
@@ -26,6 +28,20 @@ function initCanvas() {
         canvas.width = window.innerWidth;
     });
 
+    function interpolateColor() {
+        const color1 = colors[colorIndex];
+        const color2 = colors[(colorIndex + 1) % colors.length];
+
+        const t = Math.random(); // Use Math.random() for a smooth, random-like transition
+        const hex = (c: number[]) => Math.round(c[0] * (1 - t) + c[1] * t);
+
+        const r = hex([parseInt(color1.slice(1, 3), 16), parseInt(color2.slice(1, 3), 16)]);
+        const g = hex([parseInt(color1.slice(3, 5), 16), parseInt(color2.slice(3, 5), 16)]);
+        const b = hex([parseInt(color1.slice(5, 7), 16), parseInt(color2.slice(5, 7), 16)]);
+
+        return `#${r.toString(16).padStart(2, '0')}${g.toString(16).padStart(2, '0')}${b.toString(16).padStart(2, '0')}`;
+    }
+
     function drawTrail() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
 
@@ -33,7 +49,7 @@ function initCanvas() {
             const currentPoint = trail[i];
             const nextPoint = trail[i + 1];
 
-            for (let j = 0; j < 10; j++) {
+            for (let j = 0; j < 3; j++) {
                 const angle = j * (Math.PI / 6);
                 const offsetX = Math.cos(angle) * 10;
                 const offsetY = Math.sin(angle) * 10;
@@ -41,7 +57,12 @@ function initCanvas() {
                 ctx.beginPath();
                 ctx.moveTo(currentPoint.x + offsetX, currentPoint.y + offsetY);
                 ctx.lineTo(nextPoint.x + offsetX, nextPoint.y + offsetY);
-                ctx.strokeStyle = `rgba(0, 0, 255, ${currentPoint.opacity})`;
+                // ctx.strokeStyle = `rgba(0, 0, 255, ${currentPoint.opacity})`;
+                // ctx.strokeStyle = `rgba(${currentPoint.color}, ${currentPoint.opacity})`;
+                ctx.strokeStyle = `rgba(${parseInt(currentPoint.color.slice(1, 3), 16)}, 
+                                ${parseInt(currentPoint.color.slice(3, 5), 16)}, 
+                                ${parseInt(currentPoint.color.slice(5, 7), 16)}, 
+                                ${currentPoint.opacity})`;
                 ctx.lineWidth = 2;
                 ctx.stroke();
             }

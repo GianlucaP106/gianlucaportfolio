@@ -8,8 +8,8 @@ export interface HeroProps {
 export default function Hero(props: HeroProps) {
 
     return (
-        <div className={"grid md:grid-cols-12 p-10 md:p-20"}>
-            <div className={"md:col-span-7 flex justify-center items-center"}>
+        <div className={"grid md:grid-cols-12 p-10 md:p-20 min-h-screen"}>
+            <div className={"md:col-span-7 flex justify-start items-center"}>
                 <TypeWriter/>
             </div>
             <div className={"md:col-span-5 flex justify-center items-center"}>

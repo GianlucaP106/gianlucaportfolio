@@ -1,0 +1,21 @@
+.skillContainerBorder {
+    /*min-height: 300px;*/
+    /*height: clamp(250px, 300px, 350px);*/
+}
+
+.skillContainerIn {
+    min-height: 325px;
+}
+
+.skillContainerBorder:hover {
+    animation: animateColor 5s linear infinite;
+}
+
+@keyframes animateColor {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}

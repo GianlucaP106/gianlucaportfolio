@@ -10,11 +10,12 @@ export const BUBBLE_ID = 'bubble-canvas'
 
 const NUMBER_LINES = 100
 const NUMBER_POINTS = 750
-export function initBlob(color: number) {
-    const WIDTH = window.innerWidth / 3.5
-    const HEIGHT = window.innerHeight / 3.5
-    // const WIDTH = 300;
-    // const HEIGHT = 300;
+export function initBlob(color: number, isMobile: boolean) {
+    // const WIDTH = 400;
+    // const HEIGHT = 215;
+    const divisor = (isMobile ? 2 : 3.5);
+    const WIDTH = window.innerWidth / divisor;
+    const HEIGHT = window.innerHeight / divisor;
 
     const scene = new THREE.Scene()
     const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.5, 1000)
@@ -120,7 +121,7 @@ export function initBlob(color: number) {
     scene.add(lines)
 
     // Position the camera
-    camera.position.z = 1.9
+    camera.position.z = isMobile ? 2.5 : 1.9;
 
     const orbit = new OrbitControls(camera, canvas)
     orbit.enableDamping = true
