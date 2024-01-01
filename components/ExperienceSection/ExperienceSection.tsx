@@ -1,6 +1,6 @@
 import {experiences} from "@/components/ExperienceSection/experiences";
-import ExperienceCard from "@/components/ExperienceCard/ExperienceCard";
-import ExperiencePopup from "@/components/ExperienceCard/ExperiencePopup";
+import ExperienceCard from "@/components/ExperiencePopup/ExperienceCard";
+import ExperiencePopup from "@/components/ExperiencePopup/ExperiencePopup";
 
 export interface ExperienceSectionProps {
 

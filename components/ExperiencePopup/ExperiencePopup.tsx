@@ -2,7 +2,7 @@
 
 import {motion} from "framer-motion";
 import {useEffect, useState} from "react";
-import ExperienceCard, {Experience} from "@/components/ExperienceCard/ExperienceCard";
+import ExperienceCard, {Experience} from "@/components/ExperiencePopup/ExperienceCard";
 import useMedia from "@/utils/MediaUtil/MediaUtil";
 
 export type ExperiencePopupProps = {} & Experience;
@@ -40,8 +40,7 @@ export default function ExperiencePopup(props: ExperiencePopupProps) {
                         y: 0,
                     },
                     open: {
-                        // rotateY: 180,
-                        y: [-150, 0]
+                        y: [-60, 0]
                     }
                 }}
                 initial={"closed"}
@@ -58,7 +57,7 @@ export default function ExperiencePopup(props: ExperiencePopupProps) {
                     translateY: "-50%",
                     position: "absolute",
                     width: media.md ? "40%" : (media.sm ? "70%" : "90%"),
-                    height: 300,
+                    maxHeight: "50%",
                 } : {}}
             >
                 <ExperienceCard {...props} back={open}/>

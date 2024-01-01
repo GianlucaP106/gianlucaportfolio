@@ -6,14 +6,26 @@ import {motion} from "framer-motion";
 
 export interface GButtonProps {
     text: string;
+    url?: string;
+    handler?: () => void;
 }
 
 export default function GButton(props: GButtonProps) {
-    return (
-        <Link href={"/"}>
-            <motion.button whileHover={{scale: 1.05}} className={`${styles.contactMeButton}`}>
+    const Button = () => {
+        return (
+            <motion.button onClick={props.handler ? props.handler : undefined} whileHover={{scale: 1.05}} className={`${styles.contactMeButton}`}>
                 {props.text}
             </motion.button>
-        </Link>
-    )
+        )
+    }
+
+    if (props.url) {
+        return (
+            <Link href={"/"}>
+                <Button />
+            </Link>
+        );
+    }
+
+    return <Button />
 }
