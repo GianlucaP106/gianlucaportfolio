@@ -35,7 +35,7 @@ export default function ContactForm(props: ContactFormProps) {
     return (
         <div className={"myGradient p-1 rounded-xl"}>
             <div className={"cardBackgroundColor rounded-xl"}>
-                <form className={"grid grid-cols-2 gap-5 p-3"}>
+                <form className={"grid grid-cols-2 gap-5 p-8"}>
                     <div className={"col-span-1"}>
                         <TextField sx={textInputStyles} id="outlined-basic" label="Outlined" variant="outlined"/>
                     </div>
@@ -51,15 +51,7 @@ export default function ContactForm(props: ContactFormProps) {
                                    sx={textInputStyles} id="outlined-basic" label="Outlined" variant="outlined"/>
                     </div>
                     <div className={"col-span-2 flex justify-between"}>
-                        <Button
-                            variant={"outlined"}
-                            sx={{
-                                color: "white",
-                                "&.MuiButton-outlined": {
-                                    color: "white",
-                                }
-                            }}
-                            title={"Reset"}/>
+                        <Button title="Hello world" onClick={() => console.log()} />
                         <GButton text={"Submit"} handler={() => console.log()}/>
                     </div>
                 </form>

@@ -3,6 +3,7 @@ import './globals.css'
 import {ReactNode} from "react";
 import Navigation from "@/components/Navigation/Navigation";
 import CursorAnimation from "@/components/CursorAnimation/CursorAnimation";
+import Footer from '@/components/Footer/Footer';
 
 const oxanium = Oxanium({
     weight: "500",
@@ -30,6 +31,7 @@ export default function RootLayout(props: RootLayoutProps) {
                 <CursorAnimation>
                     <Navigation/>
                     {props.children}
+                    <Footer />
                 </CursorAnimation>
             </main>
         </body>

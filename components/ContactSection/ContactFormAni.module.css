@@ -1,0 +1,198 @@
+.contactAnimationGrid {
+    position: relative;
+    height: 500px;
+}
+
+.terminal {
+    width: 50px; height: 50px;
+    position: relative;
+    border: 1px solid #01debe;
+    color: #01debe;
+    border-radius: 5px;
+}
+.tags {
+    position: absolute;
+    animation: tagAnimation 20s linear infinite;
+}
+.code {
+    position: absolute;
+    animation: codeAnimation 20s linear infinite;
+}
+.terminalAni {
+    position: absolute;
+    animation: terminalAnimation 20s linear infinite;
+}
+.gitAni {
+    position: absolute;
+    animation: gitAnimation 20s linear infinite;
+}
+.brackets {
+    position: absolute;
+    animation: bracketAnimation 20s linear infinite;
+}
+.ipp {
+    position: absolute;
+    animation: ippAnimation 25s linear infinite;
+}
+@keyframes ippAnimation {
+    0% {
+        top: 5%;
+        right: 85%;
+    }
+    20% {
+        top: 40%;
+        right: 10%
+    }
+    40% {
+        top: 60%;
+        right: 70%;
+    }
+    60% {
+        top: 85%;
+        right: 60%;
+    }
+    80% {
+        top: 40%;
+        right: 30%;
+    }
+    100% {
+        top: 5%;
+        right: 85%;
+    }
+}
+@keyframes bracketAnimation {
+    0% {
+        top: 10%;
+        right: 10%;
+    }
+    25% {
+        top: 50%;
+        right: 85%
+    }
+    50% {
+        top: 85%;
+        right: 50%;
+    }
+    75% {
+        top: 50%;
+        right: 60%;
+    }
+    100% {
+        top: 10%;
+        right: 10%;
+    }
+}
+@keyframes gitAnimation {
+    0% {
+        bottom: 50%;
+        right: 50%;
+    }
+    33% {
+        bottom: 75%;
+        right: 20%
+    }
+    66% {
+        bottom: 85%;
+        right: 85%;
+    }
+    100% {
+        bottom: 50%;
+        right: 50%;
+    }
+}
+@keyframes terminalAnimation {
+    0% {
+        bottom: 10%;
+        left: 10%;
+    }
+    33% {
+        bottom: 75%;
+        left: 20%
+    }
+    66% {
+        bottom: 40%;
+        left: 80%;
+    }
+    100% {
+        bottom: 10%;
+        left: 10%;
+    }
+}
+@keyframes tagAnimation {
+    0% {
+        top: 10%;
+        left: 10%;
+    }
+    33% {
+        top: 70%;
+        left: 30%
+    }
+    66% {
+        top: 40%;
+        left: 60%;
+    }
+    100% {
+        top: 10%;
+        left: 10%;
+    }
+}
+@keyframes codeAnimation {
+    0% {
+        top: 30%;
+        left: 85%;
+    }
+    25% {
+        top: 80%;
+        left: 60%
+    }
+    50% {
+        top: 70%;
+        left: 30%;
+    }
+    75% {
+        top: 20%;
+        left: 30%;
+    }
+    100% {
+        top: 30%;
+        left: 85%;
+    }
+}
+
+.gg-git-branch {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(2.5);
+    width: 2px;
+    height: 14px;
+    background: #01debe;
+}
+.gg-git-branch::after,
+.gg-git-branch::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+}
+.gg-git-branch::before {
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+    border-bottom-right-radius: 4px;
+    bottom: 0;
+    width: 8px;
+    height: 6px;
+    left: 0;
+}
+.gg-git-branch::after {
+    width: 4px;
+    height: 4px;
+    background: #01debe;
+    box-shadow:
+        0 12px 0 0,
+        6px 6px 0 0;
+    border-radius: 100%;
+    left: -1px;
+    top: -1px
+}
+
