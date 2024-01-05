@@ -39,7 +39,8 @@ function initCanvas() {
         const g = hex([parseInt(color1.slice(3, 5), 16), parseInt(color2.slice(3, 5), 16)]);
         const b = hex([parseInt(color1.slice(5, 7), 16), parseInt(color2.slice(5, 7), 16)]);
 
-        return `#${r.toString(16).padStart(2, '0')}${g.toString(16).padStart(2, '0')}${b.toString(16).padStart(2, '0')}`;
+        return colors[1]; // for now
+        // return `#${r.toString(16).padStart(2, '0')}${g.toString(16).padStart(2, '0')}${b.toString(16).padStart(2, '0')}`;
     }
 
     function drawTrail() {
@@ -49,7 +50,7 @@ function initCanvas() {
             const currentPoint = trail[i];
             const nextPoint = trail[i + 1];
 
-            for (let j = 0; j < 3; j++) {
+            for (let j = 0; j < 1; j++) {
                 const angle = j * (Math.PI / 6);
                 const offsetX = Math.cos(angle) * 10;
                 const offsetY = Math.sin(angle) * 10;
@@ -63,7 +64,7 @@ function initCanvas() {
                                 ${parseInt(currentPoint.color.slice(3, 5), 16)}, 
                                 ${parseInt(currentPoint.color.slice(5, 7), 16)}, 
                                 ${currentPoint.opacity})`;
-                ctx.lineWidth = 2;
+                ctx.lineWidth = 3;
                 ctx.stroke();
             }
 

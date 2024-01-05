@@ -35,7 +35,7 @@ export default function ContactForm(props: ContactFormProps) {
     return (
         <div className={"myGradient p-1 rounded-xl"}>
             <div className={"cardBackgroundColor rounded-xl"}>
-                <form className={"grid grid-cols-2 gap-5 p-8"}>
+                <form className={"grid grid-cols-2 gap-5 p-6"}>
                     <div className={"col-span-1"}>
                         <TextField sx={textInputStyles} id="outlined-basic" label="Outlined" variant="outlined"/>
                     </div>

@@ -12,13 +12,13 @@ export default function ContactSection(props: ContactSectionProps) {
     const media: Media = useMedia();
     const getCols = () => {
         const col1 = (
-            <div className={"flex flex-col items-center justify-center"}>
+            <div key={1} className={"flex flex-col items-center justify-center"}>
                 <h4 className={"myTextGradient mb-4 text-4xl"}>Contact me</h4>
                 <ContactForm />
             </div>
         );
         const col2 = (
-            <div>
+            <div key={2}>
                 <ContactAni />
             </div>
         );
