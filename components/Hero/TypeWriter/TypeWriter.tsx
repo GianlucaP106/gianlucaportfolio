@@ -1,17 +1,17 @@
 "use client";
 
 import styles from "./TypeWriter.module.css";
-import {useCallback, useEffect, useState} from "react";
+import { useCallback, useEffect, useState } from "react";
 import useTypeWriter from "@/components/Hero/TypeWriter/useTypeWriter";
 
 export interface TypeWriterProps {
 
 }
 
-export default function TypeWriter(props: TypeWriterProps) {
-    const {tag1, hi, myName, description, tag2} = useTypeWriter();
+export default function TypeWriter() {
+    const { tag1, hi, myName, description, tag2 } = useTypeWriter();
     return (
-        <div className={"text-white"} style={{minWidth: "250px"}}>
+        <div className={"text-white"} style={{ minWidth: "250px" }}>
             <p className={`${styles.op0} text-gray-500 text-5xl`} id={"hero-tag1"}>{tag1}</p>
             <div className={"pl-10 md:pl-20 py-8"}>
                 <p className={`${styles.op0} text-6xl`} id={"hero-hi"}>{hi}</p>

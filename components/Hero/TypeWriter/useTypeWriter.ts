@@ -1,4 +1,4 @@
-import {useEffect, useState} from "react";
+import { useEffect, useState } from "react";
 import styles from "@/components/Hero/TypeWriter/TypeWriter.module.css";
 
 
@@ -75,7 +75,7 @@ export default function useTypeWriter() {
             document.getElementById('hero-description')?.classList.remove(styles.op0);
         }, 300);
 
-        let message = "I am a Full stack Developer and a Software Engineering Student at McGill University";
+        let message = "I am a Software Developer and a Software Engineering Student at McGill University";
         let timeCount = 50;
         for (let i = 0; i <= message.length; i++) {
             setTimeout(() => {
