@@ -10,18 +10,14 @@ export const BUBBLE_ID = 'bubble-canvas'
 
 const NUMBER_LINES = 100
 const NUMBER_POINTS = 750
-export function initBlob(color: number, isMobile: boolean) {
-    // const WIDTH = 400;
-    // const HEIGHT = 215;
-    const divisor = (isMobile ? 2 : 3.5);
-    const WIDTH = window.innerWidth / divisor;
-    const HEIGHT = window.innerHeight / divisor;
+export function initBlob(color: number) {
+    const WIDTH = 350;
+    const HEIGHT = 350;
 
     const scene = new THREE.Scene()
     const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.5, 1000)
     const canvas = document.getElementById(BUBBLE_ID) as HTMLCanvasElement
     const renderer = new THREE.WebGLRenderer({ canvas })
-    renderer.setSize(WIDTH, HEIGHT)
 
     renderer.setClearColor(0x000000, 0) // The second parameter (0) is the alpha value
 
@@ -121,7 +117,7 @@ export function initBlob(color: number, isMobile: boolean) {
     scene.add(lines)
 
     // Position the camera
-    camera.position.z = isMobile ? 2.5 : 1.9;
+    camera.position.z = 1.9;
 
     const orbit = new OrbitControls(camera, canvas)
     orbit.enableDamping = true
@@ -153,10 +149,14 @@ export function initBlob(color: number, isMobile: boolean) {
     // Start the animation loop
     animate()
 
-    // Handle window resize
-    window.addEventListener('resize', () => {
+    const resize = () => {
         camera.aspect = WIDTH / HEIGHT
         camera.updateProjectionMatrix()
         renderer.setSize(WIDTH, HEIGHT)
-    })
+    }
+    // Handle window resize
+    window.addEventListener('resize', () => {
+        resize()
+    });
+    resize()
 }
