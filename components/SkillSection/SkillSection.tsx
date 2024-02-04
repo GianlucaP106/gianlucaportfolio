@@ -1,4 +1,4 @@
-import SkillCard, {SkillCardProps} from "@/components/SkillCard/SkillCard";
+import SkillCard, { SkillCardProps } from "@/components/SkillCard/SkillCard";
 import LogoSlider from "@/components/LogoSlider/LogoSlider";
 
 
@@ -9,11 +9,11 @@ const skills: SkillCardProps[] = [
     },
     {
         title: "Libraries and Frameworks",
-        skills: ["Spring Framework", "Spring Security", "Spring Data, Web, GraphQL", "Spring OAuth2 Authorization, Resource, Client", "Spring for Apache Kafka", "OAuth", "NodeJs", "NextJs", "ExpressJs", "ReactJs", "Material UI"]
+        skills: ["Spring Framework", "Spring Security", "Spring Data, Web, GraphQL", "Spring OAuth2 Authorization, Resource, Client", "Spring for Apache Kafka", "OAuth", "NodeJs", "NextJs", "ExpressJs", "ReactJs", "Material UI", "TailwindCSS"]
     },
     {
         title: "Systems, Platforms And Tools",
-        skills: ["Github", "Git", "Microsoft Azure", "Docker", "VSCode", "IntelliJ", "NeoVim", "MacOS", "Linux", "PostgrSQL", "MySQL", "MongoDB", "Github Actions", "Kubernetes fundamentals"]
+        skills: ["Github", "Git", "Microsoft Azure", "Docker", "VSCode", "IntelliJ", "NeoVim", "MacOS", "Linux", "PostgrSQL", "MySQL", "MongoDB", "Github Actions"] //, "Kubernetes fundamentals"]
     },
     {
         title: "Concepts and Other Technologies",

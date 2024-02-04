@@ -1,8 +1,8 @@
 "use client";
 
-import {motion} from "framer-motion";
-import {useEffect, useState} from "react";
-import ExperienceCard, {Experience} from "@/components/ExperiencePopup/ExperienceCard";
+import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
+import ExperienceCard, { Experience } from "@/components/ExperiencePopup/ExperienceCard";
 import useMedia from "@/utils/MediaUtil/MediaUtil";
 
 export type ExperiencePopupProps = {} & Experience;
@@ -40,7 +40,7 @@ export default function ExperiencePopup(props: ExperiencePopupProps) {
                         y: 0,
                     },
                     open: {
-                        y: [-60, 0]
+                        y: [-10, 0]
                     }
                 }}
                 initial={"closed"}
@@ -60,7 +60,7 @@ export default function ExperiencePopup(props: ExperiencePopupProps) {
                     maxHeight: "50%",
                 } : {}}
             >
-                <ExperienceCard {...props} back={open}/>
+                <ExperienceCard {...props} back={open} />
             </motion.div>
         </motion.div>
     )

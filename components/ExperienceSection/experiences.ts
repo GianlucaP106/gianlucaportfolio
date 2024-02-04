@@ -1,7 +1,6 @@
 
 export const experiences = [
     {
-        id: 1,
         title: "TEAM Mentor",
         type: "Tomlinson Engagement Award for Mentoring (TEAM) program",
         location: "McGill",
@@ -11,9 +10,8 @@ export const experiences = [
         height: 75,
     },
     {
-        id: 2,
         title: "Developer",
-        type: "Project",
+        type: "Hackathon Project",
         location: "UoT",
         image: "/assets/experience/liaLogo-removebg-preview.png",
         description: "Lia : A Memory Aid Assistant (Project) Application to aid people with memory loss by interpreting questions and relaying answers back to the user using artifical intelligence. Won Best Health Hack at NewHacks 2021, University of Toronto.",
@@ -22,7 +20,6 @@ export const experiences = [
         height: 200,
     },
     {
-        id: 3,
         title: "Full Stack Blockchain Developer",
         type: "Contract",
         location: "DDC NFT",
@@ -33,9 +30,8 @@ export const experiences = [
         link: "https://dauntlessdolphins.com"
     },
     {
-        id: 4,
         title: "Developer",
-        type: "Project",
+        type: "Hackathon Project",
         location: "Phizer",
         image: "/assets/experience/ai.png",
         description: "PharmaHacks 2022 (Project) Machine learning models to predict the diagnosis of disease based on presence of bacteria in the gut microbiome.",
@@ -43,9 +39,8 @@ export const experiences = [
         height: 150,
     },
     {
-        id: 5,
         title: "Developer",
-        type: "Project",
+        type: "Hackathon Project",
         location: "McGill",
         image: "/assets/experience/pictodocreader.png",
         description: "PictoDocReader : A PDF Image Locator (Project). Full stack development of a software to locate images within PDFs. Won Best Education Hack at McHacks 9, McGill University.",
@@ -54,7 +49,6 @@ export const experiences = [
         height: 175,
     },
     {
-        id: 6,
         title: "Web Developer",
         type: "Part-Time",
         location: "Voysis IP Solutions",
@@ -64,9 +58,17 @@ export const experiences = [
         height: 80,
     },
     {
-        id: 7,
+        title: "Tech Lead & Event Organizer",
+        type: "Volunteering",
+        location: "GDSC at Mcgill",
+        image: "/assets/experience/Dark Stacked Logo.png",
+        description: "Proving guidance and mentorship to club members, fostering a collaborative learning environment. Leading hands-on projects, applying full stack of development skills and leveraging emerging technologies. Establishing connections with industry professionals and organzing guest speaker sessions to expose members to real-worls insights.",
+        width: 180,
+        height: 80,
+    },
+    {
         title: "Co-Founder and Developer",
-        type: "Part-Owner",
+        type: "Co-Founder",
         location: "DevPro Media",
         image: "/assets/experience/logo.png",
         description: "Co-founded DevPro media, a development, media and marketing agency where we design websites, build web applications and market brands for our clients.",
@@ -75,7 +77,6 @@ export const experiences = [
         height: 125,
     },
     {
-        id: 8,
         title: "Cybersecurity Intern",
         type: "Internship",
         location: "CGI",
@@ -85,7 +86,6 @@ export const experiences = [
         height: 80,
     },
     {
-        id: 9,
         title: "Full Stack Developer",
         type: "Internship",
         location: "Intact Financial Corporation",
@@ -93,5 +93,14 @@ export const experiences = [
         image: "/assets/experience/Intact-Insurance-Alberta-Logo-big.webp",
         width: 160,
         height: 80,
+    },
+    {
+        title: "Software Developer",
+        type: "Internship",
+        location: "Mirametrix / Lattice semiconductor",
+        description: "Devops",
+        image: "/assets/experience/Lattice Semiconductor.webp",
+        width: 160,
+        height: 160,
     },
 ];

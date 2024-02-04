@@ -3,13 +3,14 @@
 import styles from "./TypeWriter.module.css";
 import { useCallback, useEffect, useState } from "react";
 import useTypeWriter from "@/components/Hero/TypeWriter/useTypeWriter";
+import useTypeWriterFunction from "./useTypeWriterFunction";
 
 export interface TypeWriterProps {
 
 }
 
 export default function TypeWriter() {
-    const { tag1, hi, myName, description, tag2 } = useTypeWriter();
+    const { tag1, hi, myName, description, tag2 } = useTypeWriterFunction();
     return (
         <div className={"text-white"} style={{ minWidth: "250px" }}>
             <p className={`${styles.op0} text-gray-500 text-5xl`} id={"hero-tag1"}>{tag1}</p>

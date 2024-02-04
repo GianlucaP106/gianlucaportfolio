@@ -43,13 +43,13 @@ export const logos = [
         h: 100,
         description: "Python was the first language I learned, and used it in multiple hackathons!"
     },
-    {
-        src: "/assets/logos/Visual_Studio_Code_1.35_icon.png",
-        alt: "VSCode",
-        w: 100,
-        h: 100,
-        description: "VSCode my favourite text editor as it is lightweight and powerful"
-    },
+    // {
+    //     src: "/assets/logos/Visual_Studio_Code_1.35_icon.png",
+    //     alt: "VSCode",
+    //     w: 100,
+    //     h: 100,
+    //     description: "VSCode my favourite text editor as it is lightweight and powerful"
+    // },
     {
         src: "/assets/logos/reactLogo.png",
         alt: "React",
@@ -71,13 +71,13 @@ export const logos = [
         h: 100,
         description: "I learned JavasScript when I started web development and I use it almost everyday"
     },
-    {
-        src: "/assets/logos/solidityLogo.png",
-        alt: "Solidity",
-        w: 100,
-        h: 100,
-        description: "I learned Solidity when I was responsible for devlivering a Web3 application to mint NFTs"
-    },
+    // {
+    //     src: "/assets/logos/solidityLogo.png",
+    //     alt: "Solidity",
+    //     w: 100,
+    //     h: 100,
+    //     description: "I learned Solidity when I was responsible for devlivering a Web3 application to mint NFTs"
+    // },
     {
         src: "/assets/logos/dockerLogo.png",
         alt: "Docker",
@@ -127,19 +127,47 @@ export const logos = [
         h: 100,
         description: "Bootstrap is my favourite CSS framework for bulding UIs"
     },
+    // {
+    //     src: "/assets/logos/Vue.js_Logo_2.png",
+    //     alt: "Vue",
+    //     w: 100,
+    //     h: 100,
+    //     description: "I learned Vue in the process of bulding a web3 application"
+    // },
+    // {
+    //     src: "/assets/logos/2560px-Nuxt_logo.png",
+    //     alt: "Nuxt",
+    //     w: 100,
+    //     h: 80,
+    //     description: "I learned Nuxt the full stack framework in the process of bulding a web3 application"
+    // },
     {
-        src: "/assets/logos/Vue.js_Logo_2.png",
-        alt: "Vue",
+        src: "/assets/logos/Tailwind CSS Logo.svg.png",
+        alt: "TailwindCSS",
         w: 100,
         h: 100,
-        description: "I learned Vue in the process of bulding a web3 application"
+        description: "Vercel is host provider that lets you host web applications and serverless functions"
     },
     {
-        src: "/assets/logos/2560px-Nuxt_logo.png",
-        alt: "Nuxt",
+        src: "/assets/logos/Azure Logo.png",
+        alt: "Azure",
         w: 100,
-        h: 80,
-        description: "I learned Nuxt the full stack framework in the process of bulding a web3 application"
+        h: 100,
+        description: "Vercel is host provider that lets you host web applications and serverless functions"
+    },
+    {
+        src: "/assets/logos/Google Cloud Logo.png",
+        alt: "Google cloud",
+        w: 100,
+        h: 100,
+        description: "Vercel is host provider that lets you host web applications and serverless functions"
+    },
+    {
+        src: "/assets/logos/Firebase logo.png",
+        alt: "Firebase",
+        w: 100,
+        h: 100,
+        description: "Vercel is host provider that lets you host web applications and serverless functions"
     },
     {
         src: "/assets/logos/vercelLogo.png",

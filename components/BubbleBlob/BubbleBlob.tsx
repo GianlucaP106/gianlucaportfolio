@@ -6,9 +6,11 @@ import { BUBBLE_ID, initBlob } from '@/components/BubbleBlob/BubbleBlobControlle
 export interface BubbleBlobProps {
 }
 
-export const SPHERE_COLOR_DARK = 0x01ffe7
+// export const SPHERE_COLOR_DARK = 0x01ffe7
+// export const SPHERE_COLOR_LIGHT = 0x0a2f8c
 
-export const SPHERE_COLOR_LIGHT = 0x0a2f8c
+export const SPHERE_COLOR_DARK = 0x34d1c2
+
 export default function BubbleBlob(props: BubbleBlobProps) {
     useEffect(() => {
         initBlob(SPHERE_COLOR_DARK);

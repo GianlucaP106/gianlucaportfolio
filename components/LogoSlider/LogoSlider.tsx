@@ -1,9 +1,9 @@
 "use client";
 
-import {Logo, logos} from "@/components/LogoSlider/logos";
-import {motion, useAnimation, useAnimationControls} from "framer-motion";
-import useMedia, {Media} from "@/utils/MediaUtil/MediaUtil";
-import {useCallback, useEffect} from "react";
+import { Logo, logos } from "@/components/LogoSlider/logos";
+import { motion, useAnimationControls } from "framer-motion";
+import useMedia, { Media } from "@/utils/MediaUtil/MediaUtil";
+import { useCallback, useEffect } from "react";
 import LogoComponent from "@/components/LogoSlider/LogoComponent";
 
 export interface LogoSliderProps {
@@ -48,11 +48,11 @@ export default function LogoSlider(props: LogoSliderProps) {
             <motion.div
                 animate={animationControl}
                 className={"flex"}
-                style={{width: getWidth(media)}}>
+                style={{ width: getWidth(media) }}>
                 {dupedLogos.map((logo: Logo, index) => {
                     return (
                         <LogoComponent startAnimation={startAnimation} pauseAnimation={pauseAnimation} logo={logo}
-                                       key={index}/>
+                            key={index} />
                     );
                 })}
             </motion.div>
