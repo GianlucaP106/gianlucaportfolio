@@ -57,7 +57,7 @@ export default function ExperiencePopup(props: ExperiencePopupProps) {
                     translateY: "-50%",
                     position: "absolute",
                     width: media.md ? "40%" : (media.sm ? "70%" : "90%"),
-                    maxHeight: "50%",
+                    maxHeight: "400px",
                 } : {}}
             >
                 <ExperienceCard {...props} back={open} />
