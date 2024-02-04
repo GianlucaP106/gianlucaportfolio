@@ -1,4 +1,4 @@
-import {useMediaQuery} from "@mui/material";
+import { useMediaQuery } from "@mui/material";
 
 
 export interface Media {
@@ -9,7 +9,7 @@ export interface Media {
     xxl: boolean;
 }
 
-export default function useMedia() {
+export default function useMedia(): Media {
     const sm = useMediaQuery("(min-width: 640px)");
     const md = useMediaQuery("(min-width: 768px)");
     const lg = useMediaQuery("(min-width: 1024px)");
