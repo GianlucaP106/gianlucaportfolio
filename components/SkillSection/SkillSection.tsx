@@ -13,7 +13,7 @@ const skills: SkillCardProps[] = [
     },
     {
         title: "Systems, Platforms And Tools",
-        skills: ["Github", "Git", "Microsoft Azure", "Docker", "VSCode", "IntelliJ", "NeoVim", "MacOS", "Linux", "PostgrSQL", "MySQL", "MongoDB", "Github Actions"] //, "Kubernetes fundamentals"]
+        skills: ["Github", "Git", "Microsoft Azure", "Firebase", "Google Cloud", "Docker", "VSCode", "IntelliJ", "NeoVim", "MacOS", "Linux", "PostgrSQL", "MySQL", "MongoDB", "Github Actions"] //, "Kubernetes fundamentals"]
     },
     {
         title: "Concepts and Other Technologies",
