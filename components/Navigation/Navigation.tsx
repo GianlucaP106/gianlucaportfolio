@@ -47,13 +47,8 @@ export const routes: Route[] = [
     },
 ]
 
-export const getRoute = (id: string) => {
-
-}
 
 export default function Navigation(props: NavbarProps) {
-
-
     const Route = ({ route }: { route: Route }) => {
         return (
             <Link className={"text-xl px-4 text-white"} href={`${route.route}#${route.id}`}>
@@ -71,7 +66,7 @@ export default function Navigation(props: NavbarProps) {
     rts.push(
         <Route key={rts.length} route={{
             name: "Resume",
-            route: "/assets/Gianluca Piccirillo C.V. 2023-compressed.pdf",
+            route: "/assets/Gianluca Piccirillo C.V.pdf",
         }} />
     )
 
