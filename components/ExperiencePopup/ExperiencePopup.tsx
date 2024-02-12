@@ -46,7 +46,7 @@ export default function ExperiencePopup(props: ExperiencePopupProps) {
                 initial={"closed"}
                 animate={open ? "open" : "closed"}
                 transition={{
-                    duration: 0.75,
+                    duration: 0,
                     ease: "easeInOut"
                 }}
                 className={`w-full h-full cursor-pointer`}
