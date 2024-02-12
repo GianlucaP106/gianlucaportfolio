@@ -1,6 +1,6 @@
 "use client";
 
-import {ReactNode, useEffect} from "react";
+import { ReactNode, useEffect } from "react";
 
 export interface CursorAnimationProps {
     children: ReactNode;
@@ -68,7 +68,7 @@ function initCanvas() {
                 ctx.stroke();
             }
 
-            currentPoint.opacity -= 0.01;
+            currentPoint.opacity -= 0.005;
 
             if (currentPoint.opacity <= 0) {
                 trail.splice(i, 1);
