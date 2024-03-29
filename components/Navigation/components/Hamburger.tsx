@@ -1,9 +1,9 @@
 "use client";
 
-import {Button, IconButton, Menu, MenuItem} from "@mui/material";
-import React, {useState} from "react";
+import { Button, IconButton, Menu, MenuItem } from "@mui/material";
+import React, { useState } from "react";
 import MenuIcon from '@mui/icons-material/Menu';
-import {Route} from "@/components/Navigation/Navigation";
+import { Route } from "@/components/Navigation/Navigation";
 import Link from "next/link";
 
 export interface HamburgerProps {
@@ -29,7 +29,7 @@ export default function Hamburger(props: HamburgerProps) {
                 aria-expanded={open ? 'true' : undefined}
                 onClick={handleClick}
             >
-                <MenuIcon sx={{color: "white"}} fontSize={"large"} />
+                <MenuIcon sx={{ color: "white" }} fontSize={"large"} />
             </IconButton>
             <Menu
                 id="basic-menu"
@@ -43,7 +43,7 @@ export default function Hamburger(props: HamburgerProps) {
                 {props.routes.map((route: Route, index: number) => {
                     return (
                         <MenuItem key={index} onClick={() => handleClose(route)}>
-                            <Link className={"text-xl px-4 text-black"} href={route.route}>
+                            <Link className={"text-xl px-4 text-black"} href={`${route.route}#${route.id}`}>
                                 <small>{route.name}</small>
                             </Link>
                         </MenuItem>
