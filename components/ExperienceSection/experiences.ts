@@ -69,7 +69,7 @@ export const experiences = [
     {
         title: "Co-Founder and Developer",
         type: "Co-Founder",
-        location: "DevPro Media",
+        location: "Devpro",
         image: "/assets/experience/logo.png",
         description: "Co-founded DevPro media, a development, media and marketing agency where we design websites, build web applications and market brands for our clients.",
         link: "https://www.devpromedia.com",
@@ -98,7 +98,7 @@ export const experiences = [
         title: "Software Developer",
         type: "Internship",
         location: "Mirametrix / Lattice semiconductor",
-        description: "Devops",
+        description: "Played a key role in maintaining the DevOps infrastructure. Utilized tools like Docker, Python, GitHub Actions, and Jenkins to develop build tools, pipelines and workflows. Contributed to the team's initiatives by actively developing new solutions and processes.",
         image: "/assets/experience/Lattice Semiconductor.webp",
         width: 160,
         height: 160,
