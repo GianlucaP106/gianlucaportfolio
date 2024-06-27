@@ -71,7 +71,7 @@ export const experiences = [
         type: "Co-Founder",
         location: "Devpro",
         image: "/assets/experience/logo.png",
-        description: "Co-founded DevPro media, a development, media and marketing agency where we design websites, build web applications and market brands for our clients.",
+        description: "Co-founded Devpro, a sofwtare consulting and development company.",
         link: "https://www.devpromedia.com",
         width: 125,
         height: 125,
