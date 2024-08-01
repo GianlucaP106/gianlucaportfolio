@@ -5,7 +5,7 @@ import LogoSlider from "@/components/LogoSlider/LogoSlider";
 const skills: SkillCardProps[] = [
     {
         title: "Programming/Scripting Languages",
-        skills: ["Java", "Python", "TypeScript & JavaScript", "C", "Rust", "ARM Assembly", "HTML/CSS", "SQL", "Bash & ZSH", "OCaml"],
+        skills: ["Java", "TypeScript & JavaScript", "Go", "Python", "C", "Rust", "ARM Assembly", "HTML/CSS", "SQL", "Bash & ZSH", "OCaml"],
     },
     {
         title: "Libraries and Frameworks",
