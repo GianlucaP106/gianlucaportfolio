@@ -67,16 +67,6 @@ export const experiences = [
         height: 80,
     },
     {
-        title: "Co-Founder and Developer",
-        type: "Co-Founder",
-        location: "Devpro",
-        image: "/assets/experience/logo.png",
-        description: "Co-founded Devpro, a sofwtare consulting and development company.",
-        link: "https://www.devpromedia.com",
-        width: 125,
-        height: 125,
-    },
-    {
         title: "Cybersecurity Intern",
         type: "Internship",
         location: "CGI",
@@ -102,5 +92,15 @@ export const experiences = [
         image: "/assets/experience/Lattice Semiconductor.webp",
         width: 160,
         height: 160,
+    },
+    {
+        title: "Co-Founder and Developer",
+        type: "Co-Founder",
+        location: "Devpro",
+        image: "/assets/experience/logo.png",
+        description: "Co-founded Devpro, a sofwtare consulting and development company.",
+        link: "https://www.devpromedia.com",
+        width: 125,
+        height: 125,
     },
 ];
