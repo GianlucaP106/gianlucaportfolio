@@ -50,8 +50,12 @@ export const routes: Route[] = [
 
 export default function Navigation(props: NavbarProps) {
     const Route = ({ route }: { route: Route }) => {
+        let href = `${route.route}`
+        if (route.id) {
+            href += `#${route.id}`
+        }
         return (
-            <Link className={"text-xl px-4 text-white"} href={`${route.route}#${route.id}`}>
+            <Link className={"text-xl px-4 text-white"} href={href}>
                 <small>{route.name}</small>
             </Link>
         )

@@ -5,19 +5,30 @@ import LogoSlider from "@/components/LogoSlider/LogoSlider";
 const skills: SkillCardProps[] = [
     {
         title: "Programming/Scripting Languages",
-        skills: ["Java", "TypeScript & JavaScript", "Go", "Python", "C", "Rust", "ARM Assembly", "HTML/CSS", "SQL", "Bash & ZSH", "OCaml"],
+        skills: ["Java", "Go", "TypeScript", "JavaScript", "Python", "C", "Rust", "ARM Assembly", "Lua", "HTML/CSS", "Bash & Zsh", "OCaml"],
     },
     {
-        title: "Libraries and Frameworks",
-        skills: ["Spring Framework", "Spring Security", "Spring Data, Web, GraphQL", "Spring OAuth2 Authorization, Resource, Client", "Spring for Apache Kafka", "OAuth", "NodeJs", "NextJs", "ExpressJs", "ReactJs", "Material UI", "TailwindCSS"]
+        title: "Libraries & Frameworks",
+        skills: ["Spring Framework", "Prisma", "Apollo", "NextJs", "ReactJs", "React Native", "OAuth2", "SeaORM", "Hibernate", "HTTP", "REST", "GraphQL", "Pytest", "JUnit", "TailwindCSS", "Material UI", "NextAuth/AuthJs"]
     },
     {
         title: "Systems, Platforms And Tools",
-        skills: ["Github", "Git", "Microsoft Azure", "Firebase", "Google Cloud", "Docker", "VSCode", "IntelliJ", "NeoVim", "MacOS", "Linux", "PostgrSQL", "MySQL", "MongoDB", "Github Actions"]
+        skills: ["Github", "Git", "Linux", "MacOS", "PostgreSQL", "MySQL", "Github Actions", "VSCode", "JetBrain IDEs", "Neovim", "Docker", "Microsoft Azure", "Firebase", "Google Cloud", "SQL", "NoSQL", "Raspberry Pi"]
     },
     {
         title: "Concepts and Other Technologies",
-        skills: ["Software architecture", "Application security", "REST", "GraphQL", "Ethical Hacking & Cybersecurity fundamentals", "Web service penetration testing fundamentals"]
+        skills: [
+            "Software architecture",
+            "Service-oriented architectures",
+            "Application security",
+            "Application layer networking",
+            "Dev efficiency (CI/CD)",
+            "Cloud deployment",
+            "Application lifecycle management",
+            "Software project management",
+            "Agile development",
+            "Web service penetration testing fundamentals",
+        ]
     }
 ]
 
